@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Engineering & Power Cooling Systems LLP</title>
+    <meta name="description" content="APEX Engineering & Power Cooling Systems LLP provides comprehensive cooling tower solutions, mechanical services, industrial construction, and hardware supply across India.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Top Contact Bar */
+        .top-bar {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 6px 10px;
+            font-size: 14px;
+        }
+
+        /* Header */
+        .top-header {
+            background: #ffffff;
+            border-bottom: 3px solid #003366;
+            padding: 15px 20px;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .company-details h1 {
+            font-size: 26px;
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #ff7a00;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .address {
+            font-size: 13px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #003366;
+            text-align: center;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff7a00;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1581092919532-4cbb6f1d7c6c?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #ff7a00;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #e66a00;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section:nth-child(even) {
+            background: #f4f4f4;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .section p {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .list {
+            max-width: 700px;
+            margin: 20px auto;
+            list-style: none;
+        }
+
+        .list li {
+            padding: 8px 0;
+            font-size: 16px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #002244;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover::after {
+            content: "Chat with us on WhatsApp";
+            position: absolute;
+            right: 70px;
+            background: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        📞 +91 9137766304 | 📧 apex.epcs@gmail.com | 🌐 www.apexepcs.com
+    </div>
+
+    <!-- Header with Logo and Company Details -->
+    <header class="top-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="apex-logo.png" alt="APEX Engineering & Power Cooling Systems LLP Logo">
+            </div>
+            <div class="company-details">
+                <h1>APEX Engineering & Power Cooling Systems LLP</h1>
+                <p class="tagline">Advanced Power Engineering eXperts</p>
+                <p class="address">
+                    Registered Office: Shankar Vihar Khora, I.E. Sahibabad,
+                    Sahibabad, Ghaziabad – 201010, Uttar Pradesh, India |
+                    <strong>LLPIN:</strong> ACW-8292 |
+                    <strong>GSTIN:</strong> 09ACNFA8969R1Z0
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#supply">Supply</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Advanced Power Engineering eXperts</h2>
+        <p>Comprehensive Cooling Tower & Industrial Solutions</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            APEX Engineering & Power Cooling Systems LLP is an engineering-focused company providing
+            comprehensive cooling tower solutions, mechanical services, industrial construction,
+            industrial & hardware supply, and design & development of cooling tower components.
+            We serve power plants and industrial facilities across India with a commitment to
+            quality, reliability, and technical excellence.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Core Services</h2>
+        <ul class="list">
+            <li>✔ Cooling Tower Inspection & Performance Evaluation</li>
+            <li>✔ NDCT / IDCT Internals Replacement</li>
+            <li>✔ Chemical Cleaning & Descaling</li>
+            <li>✔ Mechanical Erection & Maintenance</li>
+            <li>✔ Industrial Construction Works</li>
+            <li>✔ Shutdown Maintenance & AMC Services</li>
+        </ul>
+    </section>
+
+    <!-- Supply Section -->
+    <section id="supply" class="section">
+        <h2>Industrial & Hardware Supply</h2>
+        <ul class="list">
+            <li>✔ Cooling Tower Spares (Fills, Drift Eliminators, Nozzles)</li>
+            <li>✔ Industrial Equipment & Mechanical Spares</li>
+            <li>✔ Hardware Items & Tools</li>
+            <li>✔ Safety Equipment (PPE)</li>
+            <li>✔ Valves, Pipes & Fittings</li>
+        </ul>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="section">
+        <h2>Industries Served</h2>
+        <ul class="list">
+            <li>✔ Thermal Power Plants</li>
+            <li>✔ Nuclear Power Plants</li>
+            <li>✔ Industrial Utilities</li>
+            <li>✔ Steel Plants</li>
+            <li>✔ Cement Plants</li>
+            <li>✔ HVAC Systems</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>APEX Engineering & Power Cooling Systems LLP</strong></p>
+        <p>
+            Registered Office: Shankar Vihar Khora, I.E. Sahibabad,
+            Sahibabad, Ghaziabad – 201010, Uttar Pradesh, India<br>
+            <strong>LLPIN:</strong> ACW-8292 | <strong>GSTIN:</strong> 09ACNFA8969R1Z0
+        </p>
+        <p>📞 +91 9137766304 | +91 9540685555</p>
+        <p>📧 apex.epcs@gmail.com</p>
+        <p>🌐 www.apexepcs.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 APEX Engineering & Power Cooling Systems LLP |
+        LLPIN: ACW-8292 | GSTIN: 09ACNFA8969R1Z0
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919137766304" 
+       class="whatsapp-float" 
+       target="_blank" 
+       title="Chat with us on WhatsApp">
+        💬
+    </a>
+
+</body>
+</html>
