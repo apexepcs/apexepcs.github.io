@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX Engineering & Power Cooling Systems LLP</title>
-    <meta name="description" content="APEX Engineering & Power Cooling Systems LLP provides comprehensive cooling tower solutions, mechanical services, industrial construction, and hardware supply across India.">
-    
+    <meta name="description" content="APEX Engineering & Power Cooling Systems LLP provides comprehensive engineering and power cooling solutions for power plants and industrial facilities.">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary: #0b4f8a;
+            --secondary: #f28c28;
+            --navy: #002b5c;
+            --light: #f4f6f9;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
-        }
-
-        /* Top Contact Bar */
-        .top-bar {
-            background: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 6px 10px;
-            font-size: 14px;
-        }
-
-        /* Header */
-        .top-header {
+            color: #333;
             background: #ffffff;
-            border-bottom: 3px solid #003366;
+        }
+
+        /* ===== HEADER ===== */
+        .top-header {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: #fff;
             padding: 15px 20px;
         }
 
@@ -44,142 +42,135 @@
         }
 
         .logo img {
-            width: 120px;
+            width: 90px;
             height: auto;
         }
 
         .company-details h1 {
-            font-size: 26px;
-            color: #003366;
-            margin-bottom: 5px;
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
         }
 
         .tagline {
             font-size: 16px;
-            color: #ff7a00;
             font-style: italic;
-            font-weight: 600;
-        }
-
-        .address {
-            font-size: 13px;
-            color: #555;
             margin-top: 5px;
         }
 
-        /* Navigation */
+        /* ===== NAVIGATION ===== */
         nav {
-            background: #003366;
-            text-align: center;
-            padding: 12px 0;
+            background: var(--navy);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        nav a {
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu li a {
+            display: block;
+            padding: 14px 18px;
             color: #fff;
-            margin: 0 18px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
         }
 
-        nav a:hover {
-            color: #ff7a00;
+        .nav-menu li a:hover {
+            background: var(--secondary);
         }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                        url('https://images.unsplash.com/photo-1581092919532-4cbb6f1d7c6c?auto=format&fit=crop&w=1500&q=80');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 120px 20px;
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 70px 20px;
+            max-width: 1200px;
+            margin: auto;
+            scroll-margin-top: 120px;
         }
 
-        .hero h2 {
-            font-size: 40px;
+        .section-title {
+            font-size: 32px;
+            color: var(--primary);
             margin-bottom: 10px;
         }
 
-        .hero p {
+        .section-divider {
+            width: 100%;
+            height: 4px;
+            background: var(--secondary);
+            margin-bottom: 40px;
+            border-radius: 2px;
+        }
+
+        .about-box {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ===== CARD GRID ===== */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-card h3 {
+            color: #333;
+            margin-bottom: 15px;
             font-size: 20px;
-            margin-bottom: 20px;
         }
 
-        .btn {
-            background: #ff7a00;
-            color: #fff;
-            padding: 12px 25px;
+        .service-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .service-card ul li {
+            margin-bottom: 10px;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact a {
+            color: var(--primary);
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
         }
 
-        .btn:hover {
-            background: #e66a00;
+        .contact a:hover {
+            text-decoration: underline;
         }
 
-        /* Sections */
-        .section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .section:nth-child(even) {
-            background: #f4f4f4;
-        }
-
-        .section h2 {
-            text-align: center;
-            color: #003366;
-            margin-bottom: 30px;
-            font-size: 30px;
-        }
-
-        .section p {
-            text-align: center;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .list {
-            max-width: 700px;
-            margin: 20px auto;
-            list-style: none;
-        }
-
-        .list li {
-            padding: 8px 0;
-            font-size: 16px;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .contact p {
-            margin: 10px 0;
-        }
-
-        /* Footer */
+        /* ===== FOOTER ===== */
         footer {
-            background: #002244;
+            background: var(--navy);
             color: #fff;
             text-align: center;
-            padding: 15px;
-            font-size: 14px;
+            padding: 20px;
         }
 
-        /* WhatsApp Button */
+        /* ===== WHATSAPP BUTTON ===== */
         .whatsapp-float {
             position: fixed;
             width: 60px;
@@ -187,165 +178,240 @@
             bottom: 20px;
             right: 20px;
             background-color: #25D366;
-            color: #FFF;
+            color: #fff;
             border-radius: 50%;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-            z-index: 100;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 28px;
             text-decoration: none;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            z-index: 1000;
         }
 
-        .whatsapp-float:hover::after {
-            content: "Chat with us on WhatsApp";
-            position: absolute;
-            right: 70px;
-            background: #333;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            white-space: nowrap;
-        }
-
-        /* Responsive */
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .hero h2 {
-                font-size: 28px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 8px 10px;
+            .company-details h1 {
+                font-size: 22px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Contact Bar -->
-    <div class="top-bar">
-        📞 +91 9137766304 | 📧 apex.epcs@gmail.com | 🌐 www.apexepcs.com
-    </div>
-
-    <!-- Header with Logo and Company Details -->
+    <!-- ===== HEADER ===== -->
     <header class="top-header">
         <div class="header-container">
             <div class="logo">
-                <img src="apex-logo.png" alt="APEX Engineering & Power Cooling Systems LLP Logo">
+                <img src="apex-logo.png" alt="APEX Logo">
             </div>
             <div class="company-details">
                 <h1>APEX Engineering & Power Cooling Systems LLP</h1>
                 <p class="tagline">Advanced Power Engineering eXperts</p>
-                <p class="address">
-                    Registered Office: Shankar Vihar Khora, I.E. Sahibabad,
-                    Sahibabad, Ghaziabad – 201010, Uttar Pradesh, India |
-                    <strong>LLPIN:</strong> ACW-8292 |
-                    <strong>GSTIN:</strong> 09ACNFA8969R1Z0
-                </p>
             </div>
         </div>
     </header>
 
-    <!-- Navigation -->
+    <!-- ===== NAVIGATION ===== -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#supply">Supply</a>
-        <a href="#industries">Industries</a>
-        <a href="#contact">Contact</a>
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#supply">Supply</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#innovation">Innovation</a></li>
+            <li><a href="#vision">Vision & Mission</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#qhse">QHSE</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Advanced Power Engineering eXperts</h2>
-        <p>Comprehensive Cooling Tower & Industrial Solutions</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="section-divider"></div>
+        <div class="about-box">
+            <p>
+                APEX Engineering & Power Cooling Systems LLP is a trusted provider of comprehensive engineering and power cooling solutions for power plants and industrial facilities. We specialize in cooling tower inspection, NDCT and IDCT internals replacement, chemical cleaning and descaling, mechanical erection, shutdown maintenance, and Annual Maintenance Contracts (AMC).
+            </p>
+            <p>
+                In addition to services, APEX undertakes industrial construction and engineering consultancy. The company also supplies industrial equipment, mechanical spares, hardware items, tools, and safety equipment (PPE). Driven by innovation, we design and develop advanced cooling tower components such as fills, drift eliminators, spray nozzles, and water distribution systems to enhance cooling efficiency and performance.
+            </p>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Us</h2>
+    <!-- ===== SERVICES ===== -->
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="section-divider"></div>
+        <div class="card-grid">
+            <div class="service-card">
+                <h3>Cooling Tower Services</h3>
+                <ul>
+                    <li>Inspection & Performance Assessment</li>
+                    <li>NDCT / IDCT Internals Replacement</li>
+                    <li>Chemical Cleaning & Descaling</li>
+                    <li>Fill, Drift Eliminator & Nozzle Replacement</li>
+                    <li>Refurbishment & Upgradation</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Mechanical & Shutdown Services</h3>
+                <ul>
+                    <li>Mechanical Erection & Installation</li>
+                    <li>Shutdown Maintenance</li>
+                    <li>Preventive & Breakdown Maintenance</li>
+                    <li>Annual Maintenance Contracts (AMC)</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Industrial Construction</h3>
+                <ul>
+                    <li>Civil & Structural Works</li>
+                    <li>Steel Fabrication & Installation</li>
+                    <li>Piping & Utility Installations</li>
+                    <li>EPC Support Services</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SUPPLY ===== -->
+    <section id="supply">
+        <h2 class="section-title">Industrial Supply</h2>
+        <div class="section-divider"></div>
+        <div class="card-grid">
+            <div class="service-card">
+                <h3>Cooling Tower Components</h3>
+                <ul>
+                    <li>PVC/PP Film and Splash Fills</li>
+                    <li>Drift Eliminators</li>
+                    <li>Spray Nozzles & Header Systems</li>
+                    <li>Water Distribution Systems</li>
+                    <li>Air Inlet Louvers</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Mechanical Spares & Equipment</h3>
+                <ul>
+                    <li>Pumps and Motors</li>
+                    <li>Gearboxes and Couplings</li>
+                    <li>Valves, Pipes & Fittings</li>
+                    <li>Fasteners and Fabricated Items</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Safety Equipment (PPE)</h3>
+                <ul>
+                    <li>Safety Helmets & Shoes</li>
+                    <li>Gloves & Protective Clothing</li>
+                    <li>Safety Harnesses</li>
+                    <li>Respirators & Face Shields</li>
+                    <li>Fire Safety Equipment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INDUSTRIES ===== -->
+    <section id="industries">
+        <h2 class="section-title">Industries We Serve</h2>
+        <div class="section-divider"></div>
+        <ul>
+            <li>Thermal, Nuclear, and Gas-Based Power Plants</li>
+            <li>Steel and Metal Industries</li>
+            <li>Cement Manufacturing</li>
+            <li>Oil & Gas Refineries</li>
+            <li>Petrochemical and Chemical Plants</li>
+            <li>Fertilizer Plants</li>
+            <li>Automobile and Engineering Industries</li>
+            <li>HVAC and District Cooling Systems</li>
+            <li>Commercial Complexes and Data Centers</li>
+        </ul>
+    </section>
+
+    <!-- ===== INNOVATION ===== -->
+    <section id="innovation">
+        <h2 class="section-title">Design & Innovation</h2>
+        <div class="section-divider"></div>
+        <ul>
+            <li>Design of Film and Splash Type Fills</li>
+            <li>Drift Eliminator Optimization</li>
+            <li>Spray Nozzle and Water Distribution Design</li>
+            <li>Cooling Tower Performance Enhancement</li>
+            <li>Energy and Water Efficiency Solutions</li>
+            <li>Custom Engineering for Client-Specific Requirements</li>
+        </ul>
+    </section>
+
+    <!-- ===== VISION ===== -->
+    <section id="vision">
+        <h2 class="section-title">Vision & Mission</h2>
+        <div class="section-divider"></div>
+        <p><strong>Vision:</strong> To be a leading provider of engineering and cooling solutions in the power and industrial sectors.</p>
+        <p><strong>Mission:</strong> To deliver high-quality, reliable, and cost-effective solutions with a strong commitment to safety and sustainability.</p>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section id="why">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="section-divider"></div>
+        <ul>
+            <li>Experienced Engineering Team</li>
+            <li>Customized Solutions</li>
+            <li>Commitment to Quality and Safety</li>
+            <li>Timely Project Execution</li>
+            <li>Cost-Effective Services</li>
+        </ul>
+    </section>
+
+    <!-- ===== QHSE ===== -->
+    <section id="qhse">
+        <h2 class="section-title">QHSE</h2>
+        <div class="section-divider"></div>
         <p>
-            APEX Engineering & Power Cooling Systems LLP is an engineering-focused company providing
-            comprehensive cooling tower solutions, mechanical services, industrial construction,
-            industrial & hardware supply, and design & development of cooling tower components.
-            We serve power plants and industrial facilities across India with a commitment to
-            quality, reliability, and technical excellence.
+            APEX is committed to maintaining the highest standards of quality, health, safety,
+            and environmental protection in all operations, ensuring compliance with national
+            and international regulations.
         </p>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <h2>Core Services</h2>
-        <ul class="list">
-            <li>✔ Cooling Tower Inspection & Performance Evaluation</li>
-            <li>✔ NDCT / IDCT Internals Replacement</li>
-            <li>✔ Chemical Cleaning & Descaling</li>
-            <li>✔ Mechanical Erection & Maintenance</li>
-            <li>✔ Industrial Construction Works</li>
-            <li>✔ Shutdown Maintenance & AMC Services</li>
-        </ul>
-    </section>
-
-    <!-- Supply Section -->
-    <section id="supply" class="section">
-        <h2>Industrial & Hardware Supply</h2>
-        <ul class="list">
-            <li>✔ Cooling Tower Spares (Fills, Drift Eliminators, Nozzles)</li>
-            <li>✔ Industrial Equipment & Mechanical Spares</li>
-            <li>✔ Hardware Items & Tools</li>
-            <li>✔ Safety Equipment (PPE)</li>
-            <li>✔ Valves, Pipes & Fittings</li>
-        </ul>
-    </section>
-
-    <!-- Industries Section -->
-    <section id="industries" class="section">
-        <h2>Industries Served</h2>
-        <ul class="list">
-            <li>✔ Thermal Power Plants</li>
-            <li>✔ Nuclear Power Plants</li>
-            <li>✔ Industrial Utilities</li>
-            <li>✔ Steel Plants</li>
-            <li>✔ Cement Plants</li>
-            <li>✔ HVAC Systems</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- ===== CONTACT ===== -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-divider"></div>
         <p><strong>APEX Engineering & Power Cooling Systems LLP</strong></p>
-        <p>
-            Registered Office: Shankar Vihar Khora, I.E. Sahibabad,
-            Sahibabad, Ghaziabad – 201010, Uttar Pradesh, India<br>
-            <strong>LLPIN:</strong> ACW-8292 | <strong>GSTIN:</strong> 09ACNFA8969R1Z0
+        <p><strong>Registered Office:</strong> SHANKAR VIHAR KHORA, I.E. Sahibabad, Sahibabad, Ghaziabad – 201010, Uttar Pradesh, India</p>
+        <p><strong>LLPIN:</strong> ACW-8292 | <strong>GSTIN:</strong> 09ACNFA8969R1Z0</p>
+        <p><strong>Phone:</strong> +91 9137766304</p>
+        <p><strong>Email:</strong> 
+            <a href="mailto:info@apexepcs.com">info@apexepcs.com</a> |
+            <a href="mailto:apex.epcs@gmail.com">apex.epcs@gmail.com</a>
         </p>
-        <p>📞 +91 9137766304 | +91 9540685555</p>
-        <p>📧 apex.epcs@gmail.com</p>
-        <p>🌐 www.apexepcs.com</p>
+        <p><strong>Website:</strong> <a href="https://www.apexepcs.com">www.apexepcs.com</a></p>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer>
-        © 2026 APEX Engineering & Power Cooling Systems LLP |
-        LLPIN: ACW-8292 | GSTIN: 09ACNFA8969R1Z0
+        <p>
+            © 2026 APEX Engineering & Power Cooling Systems LLP |
+            LLPIN: ACW-8292 | GSTIN: 09ACNFA8969R1Z0 |
+            Email: info@apexepcs.com
+        </p>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919137766304" 
-       class="whatsapp-float" 
-       target="_blank" 
-       title="Chat with us on WhatsApp">
+    <a href="https://wa.me/919137766304" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
         💬
     </a>
 
