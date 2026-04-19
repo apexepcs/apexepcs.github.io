@@ -5,11 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{font-family:Arial;margin:0;background:#f5f7fa}
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9; /* same as home */
+color:#222;
+}
 
 /* HEADER */
 header{
-display:flex;align-items:center;
+display:flex;
+align-items:center;
 padding:15px 30px;
 background:white;
 box-shadow:0 2px 5px rgba(0,0,0,0.1);
@@ -17,49 +23,70 @@ box-shadow:0 2px 5px rgba(0,0,0,0.1);
 header img{width:60px;margin-right:10px}
 
 /* NAV */
-nav{background:#002b5c}
-nav ul{display:flex;justify-content:center;list-style:none;margin:0;padding:0}
-nav ul li a{color:white;padding:15px 20px;text-decoration:none;font-weight:bold}
-nav ul li a:hover{background:#f28c28}
+nav{
+background:#002b5c;
+}
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+margin:0;
+padding:0;
+}
+nav ul li a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+font-weight:bold;
+}
+nav ul li a:hover{
+background:#f28c28;
+}
 
 /* SECTION */
 .section{
-padding:60px 20px;
+padding:50px 20px;
 max-width:1200px;
 margin:auto;
 }
+
+/* HEADINGS (NO UNDERLINE) */
 h2{
 color:#0b4f8a;
 margin-bottom:20px;
-border-bottom:3px solid #f28c28;
-display:inline-block;
-padding-bottom:5px;
 }
 
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
 
-/* CARD */
+/* CARD STYLE (IMPORTANT) */
 .card{
 background:white;
-padding:15px;
 border-radius:10px;
+padding:15px;
 box-shadow:0 4px 10px rgba(0,0,0,0.08);
 transition:0.3s;
+text-align:center;
 }
-.card:hover{transform:translateY(-5px)}
+.card:hover{
+transform:translateY(-5px);
+}
+
 .card img{
 width:100%;
 height:180px;
 object-fit:cover;
 border-radius:5px;
-margin-bottom:10px;
 }
-.card h3{text-align:center;margin:10px 0}
+
+.card h3{
+margin-top:10px;
+font-size:18px;
+}
 
 /* FOOTER */
 footer{
@@ -72,15 +99,23 @@ margin-top:40px;
 
 /* FLOAT BUTTONS */
 .whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:white;
-padding:15px;border-radius:50%;
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
 text-decoration:none;
 }
 .call{
-position:fixed;bottom:90px;right:20px;
-background:#0b4f8a;color:white;
-padding:15px;border-radius:50%;
+position:fixed;
+bottom:90px;
+right:20px;
+background:#0b4f8a;
+color:white;
+padding:15px;
+border-radius:50%;
 text-decoration:none;
 }
 </style>
@@ -103,7 +138,7 @@ text-decoration:none;
 
 <div class="section">
 
-<!-- 1. Cooling Tower Equipment -->
+<!-- Cooling Tower -->
 <h2>Cooling Tower Equipment</h2>
 <div class="grid">
 
@@ -124,30 +159,77 @@ text-decoration:none;
 
 </div>
 
-<!-- 2. Mechanical Spare -->
+<!-- Mechanical -->
 <h2>Mechanical Spare</h2>
 <div class="grid">
-<div class="card"><h3>Gear Boxes</h3></div>
-<div class="card"><h3>Pumps & Motors</h3></div>
-<div class="card"><h3>Couplings</h3></div>
-<div class="card"><h3>Valves & Fittings</h3></div>
+
+<div class="card">
+<img src="images/gearbox.jpg">
+<h3>Gear Boxes</h3>
 </div>
 
-<!-- 3. Industrial Equipment -->
+<div class="card">
+<img src="images/pump.jpg">
+<h3>Pumps & Motors</h3>
+</div>
+
+<div class="card">
+<img src="images/coupling.jpg">
+<h3>Couplings</h3>
+</div>
+
+<div class="card">
+<img src="images/valve.jpg">
+<h3>Valves & Fittings</h3>
+</div>
+
+</div>
+
+<!-- Industrial -->
 <h2>Industrial Equipment & Hardware Items</h2>
 <div class="grid">
-<div class="card"><h3>Fasteners</h3></div>
-<div class="card"><h3>Hand Tools</h3></div>
-<div class="card"><h3>Fabricated Items</h3></div>
+
+<div class="card">
+<img src="images/fasteners.jpg">
+<h3>Fasteners</h3>
 </div>
 
-<!-- 4. Safety Equipment -->
+<div class="card">
+<img src="images/tools.jpg">
+<h3>Hand Tools</h3>
+</div>
+
+<div class="card">
+<img src="images/fabrication.jpg">
+<h3>Fabricated Items</h3>
+</div>
+
+</div>
+
+<!-- Safety -->
 <h2>Safety Equipment (PPE)</h2>
 <div class="grid">
-<div class="card"><h3>Safety Helmets</h3></div>
-<div class="card"><h3>Safety Shoes</h3></div>
-<div class="card"><h3>Gloves & Clothing</h3></div>
-<div class="card"><h3>Safety Harness</h3></div>
+
+<div class="card">
+<img src="images/helmet.jpg">
+<h3>Safety Helmets</h3>
+</div>
+
+<div class="card">
+<img src="images/gloves.jpg">
+<h3>Safety Gloves</h3>
+</div>
+
+<div class="card">
+<img src="images/mask.jpg">
+<h3>Respiratory Masks</h3>
+</div>
+
+<div class="card">
+<img src="images/harness.jpg">
+<h3>Safety Harness</h3>
+</div>
+
 </div>
 
 </div>
