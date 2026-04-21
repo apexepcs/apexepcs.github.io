@@ -9,20 +9,28 @@ body{
 font-family:Arial;
 margin:0;
 background:#f4f6f9;
-color:#222;
 }
 
 /* HEADER */
 header{
 display:flex;
 align-items:center;
-padding:15px 30px;
+padding:15px 40px;
 background:white;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 header img{
-width:70px;
+width:80px;
 margin-right:15px;
+}
+header h1{
+margin:0;
+color:#0b4f8a;
+font-size:24px;
+}
+header p{
+margin:0;
+color:#666;
 }
 
 /* NAV */
@@ -39,7 +47,7 @@ flex-wrap:wrap;
 }
 nav ul li a{
 color:white;
-padding:15px 20px;
+padding:15px 25px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -49,45 +57,44 @@ background:#f28c28;
 
 /* SECTION */
 .section{
-padding:50px 20px;
-max-width:1200px;
+max-width:1400px;
 margin:auto;
+padding:50px 30px;
 }
 
 /* HEADINGS */
 h2{
 color:#0b4f8a;
+font-size:28px;
 margin-bottom:20px;
 }
 
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:25px;
 }
 
 /* CARD */
 .card{
 background:white;
-border-radius:10px;
+border-radius:12px;
 padding:15px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-transition:0.3s;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
 text-align:center;
+transition:0.3s;
 }
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
 }
 .card img{
 width:100%;
-height:180px;
+height:200px;
 object-fit:contain;
-border-radius:5px;
 }
 .card h3{
 margin-top:10px;
-font-size:18px;
 }
 
 /* FOOTER */
@@ -120,6 +127,18 @@ padding:15px;
 border-radius:50%;
 text-decoration:none;
 }
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+@media(max-width:600px){
+.grid{
+grid-template-columns:1fr;
+}
+}
 </style>
 </head>
 
@@ -128,8 +147,8 @@ text-decoration:none;
 <header>
 <img src="apex-logo.png">
 <div>
-<h2 style="margin:0;color:#0b4f8a;">APEX Engineering & Power Cooling Systems LLP</h2>
-<p style="margin:0;color:#666;">Advanced Power Engineering eXperts</p>
+<h1>APEX Engineering & Power Cooling Systems LLP</h1>
+<p>Advanced Power Engineering eXperts</p>
 </div>
 </header>
 
@@ -146,6 +165,7 @@ text-decoration:none;
 <!-- Cooling Tower -->
 <h2>Cooling Tower Equipment</h2>
 <div class="grid">
+
 <div class="card">
 <img src="images/fills.jpg">
 <h3>Cooling Tower Fills</h3>
@@ -160,11 +180,13 @@ text-decoration:none;
 <img src="images/nozzle.jpg">
 <h3>Spray Nozzles</h3>
 </div>
+
 </div>
 
 <!-- Mechanical -->
 <h2>Mechanical Spare</h2>
 <div class="grid">
+
 <div class="card">
 <img src="images/gearbox.jpg">
 <h3>Gear Boxes</h3>
@@ -184,11 +206,13 @@ text-decoration:none;
 <img src="images/valve.jpg">
 <h3>Valves & Fittings</h3>
 </div>
+
 </div>
 
 <!-- Industrial -->
 <h2>Industrial Equipment & Hardware Items</h2>
 <div class="grid">
+
 <div class="card">
 <img src="images/fasteners.jpg">
 <h3>Fasteners</h3>
@@ -208,11 +232,13 @@ text-decoration:none;
 <img src="images/construction.jpg">
 <h3>Construction Equipments</h3>
 </div>
+
 </div>
 
 <!-- Safety -->
 <h2>Safety Equipment (PPE)</h2>
 <div class="grid">
+
 <div class="card">
 <img src="images/helmet.jpg">
 <h3>Safety Helmets</h3>
@@ -232,6 +258,7 @@ text-decoration:none;
 <img src="images/harness.jpg">
 <h3>Safety Harness</h3>
 </div>
+
 </div>
 
 </div>
