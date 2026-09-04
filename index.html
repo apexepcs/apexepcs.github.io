@@ -247,6 +247,386 @@ text-decoration:none;
 border-radius:5px;
 font-weight:bold;
 }
+        /* ===== HOME OVERVIEW DESIGN ===== */
+
+.home-overview {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+    background: #ffffff;
+}
+
+.home-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+
+.home-kicker {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.home-intro h2 {
+    color: var(--navy);
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 12px 0 20px;
+}
+
+.home-intro p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+}
+
+.home-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.home-primary-btn,
+.home-secondary-btn,
+.home-feature-btn,
+.home-document-btn,
+.home-industries-btn,
+.home-rfq a {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-primary-btn {
+    background: var(--secondary);
+    color: #fff;
+}
+
+.home-secondary-btn {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.home-section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.home-section-heading span {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.home-section-heading h2 {
+    color: var(--primary);
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.home-section-heading p {
+    color: #666;
+}
+
+
+/* CORE BUSINESS */
+
+.home-business-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 80px;
+}
+
+.home-business-card {
+    padding: 28px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    border-top: 4px solid var(--secondary);
+}
+
+.home-business-card h3 {
+    color: var(--navy);
+    margin: 15px 0 10px;
+}
+
+.home-business-card p {
+    color: #666;
+}
+
+.home-business-card a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-icon {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+
+/* COOLING TOWER */
+
+.home-feature {
+    background: linear-gradient(135deg, #002b5c, #0b4f8a);
+    color: #fff;
+    border-radius: 15px;
+    padding: 55px;
+    margin-bottom: 80px;
+}
+
+.home-feature h2 {
+    font-size: 36px;
+    margin: 10px 0 15px;
+}
+
+.home-feature p {
+    max-width: 800px;
+    font-size: 17px;
+}
+
+.home-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+    margin: 25px 0;
+}
+
+.home-points span {
+    font-weight: bold;
+}
+
+.home-feature-btn {
+    background: var(--secondary);
+    color: #fff;
+    margin-top: 15px;
+}
+
+
+/* ENGINEERING */
+
+.home-engineering {
+    margin-bottom: 80px;
+}
+
+.home-engineering-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.home-engineering-grid > div {
+    padding: 25px;
+    background: var(--light);
+    border-radius: 10px;
+}
+
+.home-engineering-grid strong {
+    color: var(--primary);
+    font-size: 19px;
+}
+
+
+/* DOCUMENTS */
+
+.home-documents {
+    margin-bottom: 80px;
+}
+
+.home-document-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.home-document-card {
+    padding: 35px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    border: 1px solid #e4e8ed;
+}
+
+.document-badge {
+    display: inline-block;
+    background: var(--secondary);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.home-document-card h3 {
+    color: var(--navy);
+    font-size: 23px;
+}
+
+.home-document-card p {
+    color: #666;
+    min-height: 70px;
+}
+
+.home-document-btn {
+    background: var(--primary);
+    color: #fff;
+}
+
+.home-resources-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-resources-link a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* INDUSTRIES */
+
+.home-industries {
+    margin-bottom: 80px;
+}
+
+.home-industry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.home-industry-grid div {
+    background: var(--light);
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    color: var(--navy);
+}
+
+.home-industries-btn {
+    display: block;
+    width: max-content;
+    margin: 30px auto 0;
+    background: var(--primary);
+    color: #fff;
+}
+
+
+/* WHY APEX */
+
+.home-why {
+    margin-bottom: 70px;
+}
+
+.home-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.home-why-grid > div {
+    padding: 25px;
+    border-left: 4px solid var(--secondary);
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,.06);
+}
+
+.home-why-grid h3 {
+    color: var(--primary);
+}
+
+
+/* RFQ */
+
+.home-rfq {
+    background: var(--light);
+    text-align: center;
+    padding: 50px 25px;
+    border-radius: 15px;
+}
+
+.home-rfq h2 {
+    color: var(--navy);
+    font-size: 30px;
+}
+
+.home-rfq p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.home-rfq a {
+    background: var(--secondary);
+    color: #fff;
+}
+
+
+/* ===== HOME MOBILE ===== */
+
+@media (max-width: 900px) {
+
+    .home-business-grid,
+    .home-engineering-grid,
+    .home-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-overview {
+        padding: 45px 15px;
+    }
+
+    .home-intro h2 {
+        font-size: 31px;
+    }
+
+    .home-feature {
+        padding: 30px 22px;
+    }
+
+    .home-feature h2 {
+        font-size: 28px;
+    }
+
+    .home-points {
+        grid-template-columns: 1fr;
+    }
+
+    .home-business-grid,
+    .home-engineering-grid,
+    .home-document-grid,
+    .home-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-industry-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
     </style>
 </head>
 <body>
@@ -267,6 +647,7 @@ font-weight:bold;
     <!-- ===== NAVIGATION ===== -->
     <nav>
         <ul class="nav-menu">
+            <li><a href="#home-overview">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="supply.html">Supply</a></li>
@@ -299,6 +680,426 @@ Get A Quote
 </div>
 
 </section>
+<!-- ===== HOME BUSINESS OVERVIEW ===== -->
+
+<section id="home-overview" class="home-overview">
+
+    <div class="home-intro">
+        <span class="home-kicker">ADVANCED POWER ENGINEERING eXPERTS</span>
+
+        <h2>Integrated Engineering Solutions for Power & Process Industries</h2>
+
+        <p>
+            APEX Engineering & Power Cooling Systems LLP delivers
+            cooling tower services, mechanical engineering, fabrication,
+            industrial piping, shutdown maintenance and industrial supply
+            solutions.
+        </p>
+
+        <div class="home-actions">
+            <a href="#contact" class="home-primary-btn">
+                Request a Quote
+            </a>
+
+            <a href="resources/" class="home-secondary-btn">
+                View Company Resources
+            </a>
+        </div>
+    </div>
+
+
+    <!-- CORE BUSINESS -->
+
+    <div class="home-section-heading">
+
+        <span>OUR CORE BUSINESS</span>
+
+        <h2>Engineering • Services • Supply • Execution</h2>
+
+        <p>
+            Integrated support for power plants and industrial facilities.
+        </p>
+
+    </div>
+
+
+    <div class="home-business-grid">
+
+        <div class="home-business-card">
+
+            <div class="home-icon">01</div>
+
+            <h3>Cooling Tower Services</h3>
+
+            <p>
+                Inspection, performance assessment, maintenance,
+                rehabilitation and IDCT / NDCT internal replacement.
+            </p>
+
+            <a href="#services">View Services →</a>
+
+        </div>
+
+
+        <div class="home-business-card">
+
+            <div class="home-icon">02</div>
+
+            <h3>Mechanical & Engineering</h3>
+
+            <p>
+                Mechanical erection, fabrication, dismantling,
+                industrial piping, welding and installation services.
+            </p>
+
+            <a href="#services">Explore Engineering →</a>
+
+        </div>
+
+
+        <div class="home-business-card">
+
+            <div class="home-icon">03</div>
+
+            <h3>Industrial Supply</h3>
+
+            <p>
+                Cooling tower internals, mechanical equipment,
+                spares, piping items, fabricated components and
+                industrial supplies.
+            </p>
+
+            <a href="#supply">View Supply →</a>
+
+        </div>
+
+
+        <div class="home-business-card">
+
+            <div class="home-icon">04</div>
+
+            <h3>Shutdown & Maintenance</h3>
+
+            <p>
+                Planned shutdown support, preventive maintenance,
+                breakdown maintenance and Annual Maintenance Contracts.
+            </p>
+
+            <a href="#services">Learn More →</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- COOLING TOWER EXPERTISE -->
+
+    <div class="home-feature">
+
+        <div class="home-feature-content">
+
+            <span class="home-kicker">CORE EXPERTISE</span>
+
+            <h2>Cooling Tower Solutions</h2>
+
+            <p>
+                APEX supports cooling tower requirements from inspection
+                and assessment through replacement, refurbishment,
+                maintenance and performance improvement.
+            </p>
+
+            <div class="home-points">
+
+                <span>✓ IDCT / NDCT Services</span>
+                <span>✓ PVC / PP Film & Splash Fills</span>
+                <span>✓ Drift Eliminators</span>
+                <span>✓ Spray Nozzles</span>
+                <span>✓ Headers & Water Distribution</span>
+                <span>✓ Fans & Mechanical Components</span>
+                <span>✓ Basin Systems</span>
+                <span>✓ Rehabilitation & Upgradation</span>
+
+            </div>
+
+            <a href="#services" class="home-feature-btn">
+                Explore Cooling Tower Services →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ENGINEERING SERVICES -->
+
+    <div class="home-engineering">
+
+        <div class="home-section-heading">
+
+            <span>ENGINEERING CAPABILITY</span>
+
+            <h2>Mechanical, Fabrication & Site Services</h2>
+
+            <p>
+                Practical engineering and field execution support
+                for industrial projects and maintenance requirements.
+            </p>
+
+        </div>
+
+
+        <div class="home-engineering-grid">
+
+            <div>
+
+                <strong>Fabrication</strong>
+
+                <p>
+                    Steel fabrication and installation for industrial
+                    structures and equipment.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>Dismantling & Erection</strong>
+
+                <p>
+                    Dismantling, removal, erection and mechanical
+                    installation support.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>Industrial Piping</strong>
+
+                <p>
+                    Industrial piping, supports, fittings and
+                    utility installation works.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>Welding & Maintenance</strong>
+
+                <p>
+                    Site welding, repair, modification and
+                    maintenance activities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMPANY PROFILE & CATALOGUE -->
+
+    <div class="home-documents">
+
+        <div class="home-section-heading">
+
+            <span>APEX RESOURCES</span>
+
+            <h2>Company Profile & Product Catalogue</h2>
+
+            <p>
+                Explore APEX capabilities, services, cooling tower
+                solutions and industrial supply portfolio.
+            </p>
+
+        </div>
+
+
+        <div class="home-document-grid">
+
+            <div class="home-document-card">
+
+                <div class="document-badge">
+                    COMPANY PROFILE
+                </div>
+
+                <h3>Company Profile</h3>
+
+                <p>
+                    Learn about APEX, our engineering capabilities,
+                    cooling tower services, industries and execution
+                    approach.
+                </p>
+
+                <a href="resources/" class="home-document-btn">
+                    View Company Profile →
+                </a>
+
+            </div>
+
+
+            <div class="home-document-card">
+
+                <div class="document-badge">
+                    PRODUCT CATALOGUE
+                </div>
+
+                <h3>Product & Services Catalogue</h3>
+
+                <p>
+                    Explore cooling tower internal equipment,
+                    engineering services, mechanical supply and
+                    industrial solutions.
+                </p>
+
+                <a href="resources/" class="home-document-btn">
+                    View Product Catalogue →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="home-resources-link">
+
+            <a href="resources/">
+                View All APEX Resources →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- INDUSTRIES OVERVIEW -->
+
+    <div class="home-industries">
+
+        <div class="home-section-heading">
+
+            <span>INDUSTRIES WE SUPPORT</span>
+
+            <h2>Serving Critical Industrial Sectors</h2>
+
+        </div>
+
+
+        <div class="home-industry-grid">
+
+            <div>Power Plants</div>
+            <div>Steel & Metals</div>
+            <div>Cement</div>
+            <div>Oil & Gas</div>
+            <div>Chemical</div>
+            <div>Fertilizer</div>
+            <div>Manufacturing</div>
+            <div>HVAC & Data Centers</div>
+
+        </div>
+
+
+        <a href="#industries" class="home-industries-btn">
+            View All Industries →
+        </a>
+
+    </div>
+
+
+    <!-- WHY APEX -->
+
+    <div class="home-why">
+
+        <div class="home-section-heading">
+
+            <span>WHY APEX</span>
+
+            <h2>Engineering Focused. Execution Driven.</h2>
+
+        </div>
+
+
+        <div class="home-why-grid">
+
+            <div>
+
+                <h3>Engineering Capability</h3>
+
+                <p>
+                    Practical engineering solutions aligned with
+                    client and site requirements.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Field Execution</h3>
+
+                <p>
+                    Support for installation, maintenance,
+                    shutdown and refurbishment activities.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Integrated Supply</h3>
+
+                <p>
+                    Cooling tower internals and industrial
+                    components supplied to project requirements.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quality & Safety</h3>
+
+                <p>
+                    Strong commitment to quality, safety and
+                    environmental responsibility.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- REQUEST FOR QUOTE -->
+
+    <div class="home-rfq">
+
+        <h2>
+            Have a Cooling Tower or Engineering Requirement?
+        </h2>
+
+        <p>
+            Share your requirement with APEX Engineering &
+            Power Cooling Systems LLP.
+        </p>
+
+        <a href="#contact">
+            REQUEST A QUOTE
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ===== END HOME BUSINESS OVERVIEW ===== -->
     <!-- ===== ABOUT ===== -->
     <section id="about">
         <h2 class="section-title">About Us</h2>
