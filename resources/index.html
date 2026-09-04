@@ -1,1 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="APEX Engineering & Power Cooling Systems LLP - Company Profile, Product & Services Catalogue and Technical Resources.">
+
+    <title>Resources | APEX Engineering & Power Cooling Systems LLP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        :root {
+            --navy: #082b52;
+            --navy-dark: #061e39;
+            --orange: #f47b20;
+            --orange-dark: #d9630e;
+            --text: #17202a;
+            --muted: #667788;
+            --light: #f4f7fa;
+            --border: #dfe7ef;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            color: var(--text);
+            background: #ffffff;
+            line-height: 1.65;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+
+        /* HEADER */
+
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo {
+            font-family: "Manrope", sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--orange);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+            color: var(--navy);
+        }
+
+        .brand-text strong {
+            font-size: 11px;
+            letter-spacing: .6px;
+        }
+
+        .brand-text small {
+            font-size: 9px;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        .back-link {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .back-link:hover {
+            color: var(--orange);
+        }
+
+
+        /* HERO */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 105px 0 115px;
+            color: #ffffff;
+            background:
+                linear-gradient(
+                    115deg,
+                    #061f3c,
+                    #0b3968,
+                    #0d4a7c
+                );
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: .12;
+            background-image:
+                linear-gradient(
+                    rgba(255,255,255,.15) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,.15) 1px,
+                    transparent 1px
+                );
+            background-size: 55px 55px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            right: -220px;
+            top: -240px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,.15);
+            box-shadow:
+                0 0 0 70px rgba(255,255,255,.025),
+                0 0 0 140px rgba(255,255,255,.02);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.8px;
+            color: var(--orange);
+        }
+
+        .hero h1 {
+            max-width: 800px;
+            margin: 18px 0;
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(45px, 7vw, 76px);
+            line-height: 1.03;
+            letter-spacing: -2.5px;
+        }
+
+        .hero h1 span {
+            color: #9ed1f7;
+        }
+
+        .hero p {
+            max-width: 690px;
+            color: #d6e3ee;
+            font-size: 17px;
+        }
+
+
+        /* DOCUMENT SECTION */
+
+        .resources {
+            padding: 95px 0;
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 40px;
+            margin-bottom: 45px;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.7px;
+            color: var(--orange);
+        }
+
+        .section-heading h2 {
+            margin: 10px 0 0;
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1.1;
+            color: var(--navy);
+            letter-spacing: -1.5px;
+        }
+
+        .section-heading p {
+            max-width: 440px;
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* CARDS */
+
+        .document-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .document-card {
+            position: relative;
+            display: flex;
+            gap: 24px;
+            padding: 32px;
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff,
+                    #f6f9fc
+                );
+            border: 1px solid var(--border);
+            transition: .25s ease;
+        }
+
+        .document-card:hover {
+            transform: translateY(-5px);
+            border-color: #c6d6e5;
+            box-shadow:
+                0 20px 55px rgba(8,43,82,.12);
+        }
+
+        .document-number {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 11px;
+            font-weight: 800;
+            color: #aab8c5;
+        }
+
+        .document-icon {
+            min-width: 58px;
+            height: 58px;
+            display: grid;
+            place-items: center;
+            border-radius: 8px;
+            background: var(--navy);
+            font-size: 23px;
+        }
+
+        .document-type {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: var(--orange);
+        }
+
+        .document-content h3 {
+            margin: 7px 0 10px;
+            font-family: "Manrope", sans-serif;
+            font-size: 23px;
+            color: var(--navy);
+        }
+
+        .document-content p {
+            margin: 0 0 22px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11px 16px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 800;
+            transition: .2s ease;
+        }
+
+        .btn-primary {
+            color: #ffffff;
+            background: var(--navy);
+        }
+
+        .btn-primary:hover {
+            background: var(--navy-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            color: var(--navy);
+            border: 1px solid var(--border);
+            background: #ffffff;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--navy);
+            transform: translateY(-2px);
+        }
+
+
+        /* RFQ */
+
+        .rfq {
+            padding: 70px 0;
+            color: #ffffff;
+            background:
+                linear-gradient(
+                    100deg,
+                    #0a315a,
+                    #0b467b
+                );
+        }
+
+        .rfq-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 45px;
+        }
+
+        .rfq h2 {
+            max-width: 700px;
+            margin: 10px 0;
+            font-family: "Manrope", sans-serif;
+            font-size: 38px;
+            line-height: 1.1;
+        }
+
+        .rfq p {
+            max-width: 680px;
+            margin: 0;
+            color: #cbdce9;
+            font-size: 14px;
+        }
+
+        .rfq-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-orange {
+            color: #ffffff;
+            background: var(--orange);
+        }
+
+        .btn-orange:hover {
+            background: var(--orange-dark);
+        }
+
+        .btn-white {
+            color: var(--navy);
+            background: #ffffff;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            color: #b8c9d8;
+            background: var(--navy-dark);
+        }
+
+        .footer-inner {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 55px;
+            padding: 55px 0 40px;
+        }
+
+        .footer-brand {
+            margin-bottom: 12px;
+            color: #ffffff;
+            font-family: "Manrope", sans-serif;
+            font-weight: 800;
+        }
+
+        .footer-inner p,
+        .footer-inner a {
+            display: block;
+            color: #b8c9d8;
+            font-size: 12px;
+        }
+
+        .footer-inner a {
+            margin: 7px 0;
+        }
+
+        .footer-inner a:hover {
+            color: #ffffff;
+        }
+
+        .footer-inner strong {
+            display: block;
+            margin-bottom: 12px;
+            color: #ffffff;
+            font-size: 13px;
+        }
+
+        .copyright {
+            padding: 18px 4%;
+            border-top: 1px solid rgba(255,255,255,.1);
+            text-align: center;
+            font-size: 10px;
+            color: #8fa5b8;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .section-heading,
+            .rfq-inner {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .document-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 560px) {
+
+            .header-inner {
+                min-height: 68px;
+            }
+
+            .brand-text {
+                display: none;
+            }
+
+            .hero {
+                padding: 75px 0 85px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .resources {
+                padding: 70px 0;
+            }
+
+            .document-card {
+                flex-direction: column;
+            }
+
+            .document-icon {
+                width: 52px;
+                min-width: 52px;
+            }
+
+            .rfq h2 {
+                font-size: 31px;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <a href="/" class="brand">
+
+            <span class="brand-logo">
+                APEX
+            </span>
+
+            <span class="brand-text">
+
+                <strong>
+                    ENGINEERING & POWER
+                </strong>
+
+                <small>
+                    COOLING SYSTEMS LLP
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <a href="/" class="back-link">
+            ← Back to APEX EPCS
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="eyebrow">
+            APEX EPCS
+        </div>
+
+        <h1>
+            Resources &<br>
+            <span>Downloads</span>
+        </h1>
+
+        <p>
+            Explore our company profile, product & services catalogue,
+            and technical resources for cooling tower and industrial
+            engineering requirements.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- RESOURCES -->
+
+<section class="resources">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <div class="section-label">
+                    COMPANY INFORMATION
+                </div>
+
+                <h2>
+                    APEX EPCS Documents
+                </h2>
+
+            </div>
+
+            <p>
+                Download our latest company and service information
+                for procurement, vendor registration, RFQs and
+                technical enquiries.
+            </p>
+
+        </div>
+
+
+        <div class="document-grid">
+
+
+            <!-- COMPANY PROFILE -->
+
+            <article class="document-card">
+
+                <div class="document-number">
+                    01
+                </div>
+
+                <div class="document-icon">
+                    📄
+                </div>
+
+                <div class="document-content">
+
+                    <div class="document-type">
+                        COMPANY PROFILE
+                    </div>
+
+                    <h3>
+                        APEX Company Profile
+                    </h3>
+
+                    <p>
+                        Introduction to APEX Engineering & Power
+                        Cooling Systems LLP, including capabilities,
+                        industries served, engagement models,
+                        credentials and QHSE commitment.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="documents/company-profile.pdf"
+                           target="_blank"
+                           class="btn btn-primary">
+
+                            View Profile
+
+                        </a>
+
+                        <a href="documents/company-profile.pdf"
+                           download
+                           class="btn btn-outline">
+
+                            Download PDF
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE CATALOGUE -->
+
+            <article class="document-card">
+
+                <div class="document-number">
+                    02
+                </div>
+
+                <div class="document-icon">
+                    📘
+                </div>
+
+                <div class="document-content">
+
+                    <div class="document-type">
+                        PRODUCT & SERVICES
+                    </div>
+
+                    <h3>
+                        Product & Services Catalogue
+                    </h3>
+
+                    <p>
+                        Detailed information covering cooling tower
+                        services, internal equipment supply, mechanical,
+                        fabrication and engineering services.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="documents/product-services-catalogue.pdf"
+                           target="_blank"
+                           class="btn btn-primary">
+
+                            View Catalogue
+
+                        </a>
+
+                        <a href="documents/product-services-catalogue.pdf"
+                           download
+                           class="btn btn-outline">
+
+                            Download PDF
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- IDCT GUIDE -->
+
+            <article class="document-card">
+
+                <div class="document-number">
+                    03
+                </div>
+
+                <div class="document-icon">
+                    ⚙️
+                </div>
+
+                <div class="document-content">
+
+                    <div class="document-type">
+                        TECHNICAL RESOURCE
+                    </div>
+
+                    <h3>
+                        IDCT Design & Build Guide
+                    </h3>
+
+                    <p>
+                        Technical reference material for IDCT design,
+                        engineering and build considerations.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="documents/idct-design-build-guide.pdf"
+                           target="_blank"
+                           class="btn btn-primary">
+
+                            View Guide
+
+                        </a>
+
+                        <a href="documents/idct-design-build-guide.pdf"
+                           download
+                           class="btn btn-outline">
+
+                            Download PDF
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- KNOWLEDGE GUIDE -->
+
+            <article class="document-card">
+
+                <div class="document-number">
+                    04
+                </div>
+
+                <div class="document-icon">
+                    📚
+                </div>
+
+                <div class="document-content">
+
+                    <div class="document-type">
+                        TECHNICAL KNOWLEDGE
+                    </div>
+
+                    <h3>
+                        Cooling Tower Knowledge Guide
+                    </h3>
+
+                    <p>
+                        Technical knowledge resource covering
+                        cooling tower engineering, equipment
+                        and performance topics.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="documents/cooling-tower-knowledge-guide.pdf"
+                           target="_blank"
+                           class="btn btn-primary">
+
+                            View Guide
+
+                        </a>
+
+                        <a href="documents/cooling-tower-knowledge-guide.pdf"
+                           download
+                           class="btn btn-outline">
+
+                            Download PDF
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RFQ -->
+
+<section class="rfq">
+
+    <div class="container rfq-inner">
+
+        <div>
+
+            <div class="section-label">
+                PROJECT ENQUIRY
+            </div>
+
+            <h2>
+                Have a Cooling Tower or Engineering Requirement?
+            </h2>
+
+            <p>
+                Send your RFQ, tender enquiry, shutdown requirement
+                or engineering scope to APEX EPCS.
+            </p>
+
+        </div>
+
+
+        <div class="rfq-buttons">
+
+            <a href="mailto:info@apexepcs.com?subject=RFQ%20-%20APEX%20EPCS"
+               class="btn btn-orange">
+
+                Send RFQ
+
+            </a>
+
+            <a href="https://wa.me/919137766304"
+               target="_blank"
+               rel="noopener"
+               class="btn btn-white">
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <div class="footer-brand">
+                APEX Engineering & Power Cooling Systems LLP
+            </div>
+
+            <p>
+                Cooling Tower Services • Internal Equipment Supply •
+                Mechanical Engineering • Fabrication • Industrial Supply
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                Resources
+            </strong>
+
+            <a href="documents/company-profile.pdf">
+                Company Profile
+            </a>
+
+            <a href="documents/product-services-catalogue.pdf">
+                Product & Services Catalogue
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                Contact
+            </strong>
+
+            <a href="tel:+919137766304">
+                +91 91377 66304
+            </a>
+
+            <a href="mailto:info@apexepcs.com">
+                info@apexepcs.com
+            </a>
+
+            <p>
+                Ghaziabad, Uttar Pradesh, India
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 APEX Engineering & Power Cooling Systems LLP
+
+        • GSTIN 09ACNFA8969R1Z0
+
+        • LLPIN ACW-8292
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
