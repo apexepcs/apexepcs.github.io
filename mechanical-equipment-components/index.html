@@ -1,335 +1,621 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mechanical Equipment & Components | APEX Engineering & Power Cooling Systems LLP</title>
+<title>Mechanical Equipment & Components | APEX Engineering & Power Cooling Systems LLP</title>
 
-    <meta name="description" content="APEX Engineering & Power Cooling Systems LLP supplies mechanical equipment and components including motors, gearboxes, shafts, couplings, pumps, fans, valves and related industrial equipment for cooling towers and process industries across India.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="canonical" href="https://www.apexepcs.com/mechanical-equipment-components/">
+<meta name="description" content="APEX Engineering & Power Cooling Systems LLP supplies mechanical equipment and components including gearboxes, motors, pumps, couplings, valves, fan components, shafts and related industrial equipment for cooling towers and process industries across India.">
 
-    <style>
-        :root {
-            --navy: #003366;
-            --blue: #005b96;
-            --orange: #f28c28;
-            --light: #f5f7fa;
-            --dark: #222;
-        }
+<link rel="canonical" href="https://www.apexepcs.com/mechanical-equipment-components/">
 
-        * {
-            box-sizing: border-box;
-        }
+<!-- Social Sharing SEO -->
 
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--dark);
-            line-height: 1.6;
-            background: #fff;
-        }
+<meta property="og:title" content="Mechanical Equipment & Components | APEX Engineering & Power Cooling Systems LLP">
+<meta property="og:description" content="Mechanical equipment and component supply for cooling towers, industrial maintenance and process industries across India.">
+<meta property="og:url" content="https://www.apexepcs.com/mechanical-equipment-components/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APEX Engineering & Power Cooling Systems LLP">
+<meta property="og:image" content="https://www.apexepcs.com/apex-logo.png">
 
-        .page-header {
-            background: linear-gradient(110deg, #205b88, #d88932);
-            color: #fff;
-            padding: 35px 20px;
-            text-align: center;
-        }
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mechanical Equipment & Components | APEX Engineering & Power Cooling Systems LLP">
+<meta name="twitter:description" content="Mechanical equipment and component supply for cooling towers and industrial facilities across India.">
+<meta name="twitter:image" content="https://www.apexepcs.com/apex-logo.png">
 
-        .page-header h1 {
-            margin: 0;
-            font-size: 38px;
-        }
+<style>
 
-        .page-header p {
-            margin: 8px 0 0;
-            font-size: 17px;
-        }
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
 
-        .breadcrumb {
-            background: var(--navy);
-            color: #fff;
-            padding: 12px 20px;
-            text-align: center;
-            font-size: 14px;
-        }
+/* HEADER */
 
-        .breadcrumb a {
-            color: #fff;
-            text-decoration: none;
-        }
+header{
+display:flex;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 45px 20px;
-        }
+header img{
+width:80px;
+margin-right:15px;
+}
 
-        .intro {
-            text-align: center;
-            max-width: 850px;
-            margin: 0 auto 40px;
-        }
+header h1{
+margin:0;
+color:#0b4f8a;
+font-size:24px;
+}
 
-        .intro h2 {
-            color: var(--navy);
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
+header p{
+margin:0;
+color:#666;
+}
 
-        .intro p {
-            font-size: 17px;
-        }
+/* NAV */
 
-        .section-title {
-            color: var(--navy);
-            text-align: center;
-            font-size: 28px;
-            margin: 45px 0 25px;
-        }
+nav{
+background:#002b5c;
+}
 
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 22px;
-        }
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+margin:0;
+padding:0;
+flex-wrap:wrap;
+}
 
-        .product-card {
-            background: var(--light);
-            border-left: 5px solid var(--orange);
-            padding: 24px;
-            border-radius: 6px;
-        }
+nav ul li a{
+color:white;
+padding:15px 25px;
+text-decoration:none;
+font-weight:bold;
+}
 
-        .product-card h3 {
-            color: var(--navy);
-            margin-top: 0;
-            font-size: 20px;
-        }
+nav ul li a:hover{
+background:#f28c28;
+}
 
-        .product-card ul {
-            margin: 0;
-            padding-left: 20px;
-        }
+/* SUPPLY DROPDOWN */
 
-        .applications {
-            background: #f0f4f8;
-            padding: 35px 25px;
-            margin-top: 45px;
-            border-radius: 8px;
-        }
+nav ul li.dropdown{
+position:relative;
+}
 
-        .applications ul {
-            max-width: 800px;
-            margin: auto;
-        }
+nav ul li.dropdown .dropdown-menu{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+min-width:280px;
+background:#002b5c;
+padding:0;
+margin:0;
+list-style:none;
+z-index:1000;
+}
 
-        .cta {
-            background: var(--navy);
-            color: #fff;
-            text-align: center;
-            padding: 45px 20px;
-            margin-top: 50px;
-            border-radius: 8px;
-        }
+nav ul li.dropdown:hover .dropdown-menu{
+display:block;
+}
 
-        .cta h2 {
-            margin-top: 0;
-            font-size: 30px;
-        }
+nav ul li.dropdown .dropdown-menu li{
+width:100%;
+}
 
-        .cta a {
-            display: inline-block;
-            background: var(--orange);
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 13px 24px;
-            margin: 8px;
-            border-radius: 4px;
-        }
+nav ul li.dropdown .dropdown-menu li a{
+display:block;
+padding:15px 18px;
+color:white;
+text-decoration:none;
+white-space:nowrap;
+}
 
-        .back-link {
-            text-align: center;
-            margin-top: 30px;
-        }
+nav ul li.dropdown .dropdown-menu li a:hover{
+background:#f28c28;
+}
 
-        .back-link a {
-            color: var(--blue);
-            font-weight: bold;
-            text-decoration: none;
-        }
+/* SECTION */
 
-        footer {
-            background: #172b3a;
-            color: #fff;
-            text-align: center;
-            padding: 25px 15px;
-            margin-top: 50px;
-        }
+.section{
+max-width:1400px;
+margin:auto;
+padding:50px 30px;
+}
 
-        @media (max-width: 600px) {
-            .page-header h1 {
-                font-size: 28px;
-            }
+/* PAGE INTRO */
 
-            .intro h2,
-            .section-title,
-            .cta h2 {
-                font-size: 24px;
-            }
-        }
-    </style>
+.page-intro{
+text-align:center;
+max-width:900px;
+margin:0 auto 45px;
+}
+
+.page-intro h2{
+color:#0b4f8a;
+font-size:32px;
+margin-bottom:15px;
+}
+
+.page-intro p{
+font-size:17px;
+color:#555;
+line-height:1.7;
+}
+
+/* HEADINGS */
+
+h2{
+color:#0b4f8a;
+font-size:28px;
+margin-bottom:20px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+border-radius:12px;
+padding:15px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:contain;
+}
+
+.card h3{
+margin-top:10px;
+color:#0b4f8a;
+}
+
+.card p{
+font-size:15px;
+color:#555;
+line-height:1.6;
+margin:15px;
+text-align:justify;
+}
+
+/* INFORMATION BOX */
+
+.info-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+margin-top:45px;
+}
+
+.info-box h2{
+margin-top:0;
+}
+
+.info-box ul{
+line-height:1.9;
+}
+
+/* CTA */
+
+.cta{
+background:#002b5c;
+color:white;
+text-align:center;
+padding:40px 25px;
+border-radius:12px;
+margin-top:50px;
+}
+
+.cta h2{
+color:white;
+}
+
+.cta p{
+font-size:17px;
+}
+
+.cta a{
+display:inline-block;
+background:#f28c28;
+color:white;
+padding:12px 24px;
+margin-top:10px;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:#002b5c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* FLOAT BUTTONS */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
+
+.call{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#0b4f8a;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+<!-- STRUCTURED DATA -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Mechanical Equipment & Components",
+  "description":"Mechanical equipment and component supply for cooling towers and industrial facilities across India.",
+  "url":"https://www.apexepcs.com/mechanical-equipment-components/",
+  "isPartOf":{
+    "@type":"WebSite",
+    "name":"APEX Engineering & Power Cooling Systems LLP",
+    "url":"https://www.apexepcs.com/"
+  },
+  "about":{
+    "@type":"Thing",
+    "name":"Mechanical Equipment and Industrial Components"
+  }
+}
+</script>
+
 </head>
 
 <body>
 
-<header class="page-header">
-    <h1>Mechanical Equipment &amp; Components</h1>
-    <p>Industrial Equipment &amp; Component Supply for Cooling Towers and Process Industries</p>
-</header>
+<header>
 
-<div class="breadcrumb">
-    <a href="../index.html">Home</a> &nbsp; / &nbsp;
-    <a href="../supply.html">Supply</a> &nbsp; / &nbsp;
-    Mechanical Equipment &amp; Components
+<img src="../apex-logo.png" alt="APEX Engineering & Power Cooling Systems LLP Logo">
+
+<div>
+
+<h1>APEX Engineering & Power Cooling Systems LLP</h1>
+
+<p>Advanced Power Engineering eXperts</p>
+
 </div>
 
-<main class="container">
-
-    <section class="intro">
-        <h2>Mechanical Equipment &amp; Components Supply</h2>
-
-        <p>
-            APEX Engineering &amp; Power Cooling Systems LLP supplies mechanical
-            equipment and components for cooling tower maintenance, plant
-            shutdowns, replacement requirements and industrial engineering
-            applications.
-        </p>
-
-        <p>
-            Our supply capability is supported by our field engineering
-            understanding, helping clients source equipment and components
-            according to project and site requirements.
-        </p>
-    </section>
+</header>
 
 
-    <h2 class="section-title">Equipment &amp; Components</h2>
+<nav>
 
-    <section class="product-grid">
+<ul>
 
-        <div class="product-card">
-            <h3>Cooling Tower Drive Components</h3>
-            <ul>
-                <li>Gearboxes</li>
-                <li>Motors</li>
-                <li>Shafts</li>
-                <li>Couplings</li>
-                <li>Drive-system related components</li>
-            </ul>
-        </div>
+<li>
+<a href="../index.html">Home</a>
+</li>
 
-        <div class="product-card">
-            <h3>Fans &amp; Fan Assemblies</h3>
-            <ul>
-                <li>Cooling tower fan blades</li>
-                <li>Fan stacks</li>
-                <li>Fan assemblies</li>
-                <li>Related mechanical components</li>
-            </ul>
-        </div>
+<li class="dropdown">
 
-        <div class="product-card">
-            <h3>Pumps &amp; Mechanical Equipment</h3>
-            <ul>
-                <li>Industrial pumps</li>
-                <li>Mechanical equipment</li>
-                <li>Replacement components</li>
-                <li>Site-specific equipment requirements</li>
-            </ul>
-        </div>
+<a href="../supply.html" style="color:#f28c28;">Supply</a>
 
-        <div class="product-card">
-            <h3>Valves &amp; Associated Components</h3>
-            <ul>
-                <li>Industrial valves</li>
-                <li>Cooling tower pipeline components</li>
-                <li>Associated mechanical components</li>
-                <li>Replacement requirements</li>
-            </ul>
-        </div>
+<ul class="dropdown-menu">
 
-        <div class="product-card">
-            <h3>Cooling Tower Mechanical Components</h3>
-            <ul>
-                <li>Fan and drive components</li>
-                <li>Shaft and coupling components</li>
-                <li>Structural mechanical accessories</li>
-                <li>Fasteners and related items</li>
-            </ul>
-        </div>
+<li>
+<a href="../cooling-tower-internals/">Cooling Tower Internals</a>
+</li>
 
-        <div class="product-card">
-            <h3>Industrial Replacement Components</h3>
-            <ul>
-                <li>Maintenance replacement items</li>
-                <li>Equipment modification components</li>
-                <li>Shutdown-related requirements</li>
-                <li>Project-specific supply</li>
-            </ul>
-        </div>
+<li>
+<a href="./">Mechanical Equipment &amp; Components</a>
+</li>
 
-    </section>
+</ul>
+
+</li>
+
+<li>
+<a href="../index.html#contact">Contact</a>
+</li>
+
+</ul>
+
+</nav>
 
 
-    <section class="applications">
-
-        <h2 class="section-title">Applications</h2>
-
-        <ul>
-            <li>Cooling tower maintenance and refurbishment</li>
-            <li>Cooling tower shutdown projects</li>
-            <li>Mechanical equipment replacement</li>
-            <li>Industrial plant maintenance</li>
-            <li>Mechanical installation and modification works</li>
-            <li>Power, steel, cement, chemical and process industries</li>
-        </ul>
-
-    </section>
+<div class="section">
 
 
-    <section class="cta">
+<div class="page-intro">
 
-        <h2>Need Mechanical Equipment or Components?</h2>
+<h2>Mechanical Equipment &amp; Components</h2>
 
-        <p>
-            Share your equipment requirement, specification or project scope
-            with APEX Engineering &amp; Power Cooling Systems LLP.
-        </p>
+<p>
+APEX Engineering &amp; Power Cooling Systems LLP supplies mechanical
+equipment and components for cooling tower maintenance, industrial
+shutdowns, replacement requirements and process industry applications.
+</p>
 
-        <a href="../index.html#contact">Request a Quote</a>
+<p>
+Our supply capability supports project-specific requirements for
+industrial plants, cooling tower systems and mechanical maintenance
+activities across India.
+</p>
 
-        <a href="../resources/">Company Resources</a>
-
-    </section>
+</div>
 
 
-    <div class="back-link">
-        <a href="../supply.html">← Back to Supply</a>
-    </div>
+<h2>Cooling Tower Mechanical Equipment</h2>
 
-</main>
+<div class="grid">
+
+
+<div class="card">
+
+<img src="../images/gearbox.jpg" alt="Cooling Tower Gearboxes">
+
+<h3>Gearboxes</h3>
+
+<p>
+Cooling tower gearboxes and related drive components for fan
+drive systems, maintenance and replacement requirements.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../images/pump.jpg" alt="Industrial Pumps and Motors">
+
+<h3>Pumps &amp; Motors</h3>
+
+<p>
+Industrial pumps, motors and associated mechanical equipment
+for cooling tower and plant maintenance applications.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../images/coupling.jpg" alt="Mechanical Couplings">
+
+<h3>Couplings</h3>
+
+<p>
+Mechanical couplings and drive-system components for
+industrial equipment and cooling tower applications.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../images/valve.jpg" alt="Industrial Valves">
+
+<h3>Valves &amp; Fittings</h3>
+
+<p>
+Industrial valves, fittings and associated components for
+cooling water and process piping requirements.
+</p>
+
+</div>
+
+
+</div>
+
+
+<h2 style="margin-top:50px;">Mechanical Components</h2>
+
+<div class="grid">
+
+
+<div class="card">
+
+<img src="../images/coupling.jpg" alt="Cooling Tower Shafts and Coupling Components">
+
+<h3>Shafts &amp; Drive Components</h3>
+
+<p>
+Shafts and associated drive components used in cooling tower
+fan drive and mechanical equipment applications.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../images/fabrication.jpg" alt="Fabricated Mechanical Components">
+
+<h3>Fabricated Components</h3>
+
+<p>
+Fabricated mechanical components and replacement items
+according to project and site requirements.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../images/fasteners.jpg" alt="Industrial Fasteners">
+
+<h3>Mechanical Fasteners</h3>
+
+<p>
+Industrial fasteners and related hardware for equipment
+installation, maintenance and replacement works.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../images/tools.jpg" alt="Industrial Maintenance Tools">
+
+<h3>Maintenance Tools</h3>
+
+<p>
+Industrial tools supporting mechanical maintenance,
+equipment replacement and site execution requirements.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="info-box">
+
+<h2>Supply Capability</h2>
+
+<ul>
+
+<li>Cooling tower gearboxes and drive components</li>
+
+<li>Motors and mechanical equipment</li>
+
+<li>Pumps and associated components</li>
+
+<li>Couplings and shafts</li>
+
+<li>Industrial valves and fittings</li>
+
+<li>Cooling tower fan and drive components</li>
+
+<li>Mechanical replacement components</li>
+
+<li>Industrial fasteners and hardware</li>
+
+<li>Site and maintenance tools</li>
+
+<li>Fabricated mechanical components</li>
+
+</ul>
+
+</div>
+
+
+<div class="info-box">
+
+<h2>Applications</h2>
+
+<ul>
+
+<li>Cooling tower maintenance and refurbishment</li>
+
+<li>Cooling tower shutdown projects</li>
+
+<li>Mechanical equipment replacement</li>
+
+<li>Power plant maintenance</li>
+
+<li>Steel and metal industry maintenance</li>
+
+<li>Cement plant maintenance</li>
+
+<li>Chemical and process industries</li>
+
+<li>Industrial engineering and mechanical projects</li>
+
+</ul>
+
+</div>
+
+
+<div class="cta">
+
+<h2>Need Mechanical Equipment or Components?</h2>
+
+<p>
+Share your equipment requirement, specification or project scope
+with APEX Engineering &amp; Power Cooling Systems LLP.
+</p>
+
+<a href="../index.html#contact">
+REQUEST A QUOTE
+</a>
+
+</div>
+
+
+</div>
 
 
 <footer>
-    <strong>APEX Engineering &amp; Power Cooling Systems LLP</strong><br>
-    Advanced Power Engineering eXperts<br>
-    Shankar Vihar Khora, I.E. Sahibabad, Ghaziabad – 201010, Uttar Pradesh<br>
-    +91 9137766304 &nbsp; | &nbsp; info@apexepcs.com
+
+© 2026 APEX Engineering &amp; Power Cooling Systems LLP
+
 </footer>
+
+
+<a href="https://wa.me/919137766304" class="whatsapp">💬</a>
+
+<a href="tel:+919137766304" class="call">📞</a>
+
 
 </body>
 </html>
