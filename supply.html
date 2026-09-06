@@ -67,7 +67,43 @@ font-weight:bold;
 nav ul li a:hover{
 background:#f28c28;
 }
+/* SUPPLY DROPDOWN */
+nav ul li.dropdown{
+position:relative;
+}
 
+nav ul li.dropdown .dropdown-menu{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+min-width:280px;
+background:#002b5c;
+padding:0;
+margin:0;
+list-style:none;
+z-index:1000;
+}
+
+nav ul li.dropdown:hover .dropdown-menu{
+display:block;
+}
+
+nav ul li.dropdown .dropdown-menu li{
+width:100%;
+}
+
+nav ul li.dropdown .dropdown-menu li a{
+display:block;
+padding:15px 18px;
+color:white;
+text-decoration:none;
+white-space:nowrap;
+}
+
+nav ul li.dropdown .dropdown-menu li a:hover{
+background:#f28c28;
+}
 /* SECTION */
 .section{
 max-width:1400px;
@@ -209,7 +245,12 @@ grid-template-columns:1fr;
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="supply.html" style="color:#f28c28;">Supply</a></li>
+<li class="dropdown">
+    <a href="supply.html" style="color:#f28c28;">Supply</a>
+    <ul class="dropdown-menu">
+        <li><a href="cooling-tower-internals/">Cooling Tower Internals</a></li>
+    </ul>
+</li>
 <li><a href="index.html#contact">Contact</a></li>
 </ul>
 </nav>
