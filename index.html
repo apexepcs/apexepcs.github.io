@@ -702,6 +702,45 @@ font-weight:bold;
         grid-template-columns: 1fr;
     }
 
+}/* ===== MOBILE DROPDOWN NAVIGATION ===== */
+@media (max-width: 768px) {
+
+    .nav-menu > li.dropdown > a {
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .nav-menu > li.dropdown > a::after {
+        content: "▼";
+        position: absolute;
+        right: 8px;
+        font-size: 10px;
+        color: #ffffff;
+    }
+
+    .nav-menu > li.dropdown.active > a::after {
+        content: "▲";
+    }
+
+    .nav-menu > li.dropdown > .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+        min-width: 100%;
+        box-shadow: none;
+    }
+
+    .nav-menu > li.dropdown.active > .dropdown-menu {
+        display: block;
+    }
+
+    .nav-menu > li.dropdown:hover > .dropdown-menu {
+        display: none;
+    }
+
+    .nav-menu > li.dropdown.active:hover > .dropdown-menu {
+        display: block;
+    }
 }
     </style>
 </head>
@@ -1428,6 +1467,35 @@ Get A Quote
         💬
 
     </a>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const dropdowns = document.querySelectorAll(".nav-menu > li.dropdown");
+
+    dropdowns.forEach(function (dropdown) {
+
+        const link = dropdown.querySelector(":scope > a");
+
+        link.addEventListener("click", function (event) {
+
+            if (window.innerWidth <= 768) {
+
+                event.preventDefault();
+
+                dropdowns.forEach(function (other) {
+                    if (other !== dropdown) {
+                        other.classList.remove("active");
+                    }
+                });
+
+                dropdown.classList.toggle("active");
+            }
+
+        });
+
+    });
+
+});
+</script>
 </body>
 </html>
