@@ -3,32 +3,39 @@ FILE: about.html
 ========================= -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
-<title>About APEX Engineering & Power Cooling Systems LLP | Cooling Tower & Industrial Engineering</title>
-<meta name="description" content="APEX Engineering & Power Cooling Systems LLP provides cooling tower services, mechanical engineering, fabrication, piping, industrial maintenance and engineering solutions for power, steel, cement, chemical and process industries across India.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About APEX Engineering & Power Cooling Systems LLP | Industrial Engineering & Cooling Tower Services</title>
+
+<meta name="description" content="Learn about APEX Engineering & Power Cooling Systems LLP, an industrial engineering company providing cooling tower services, IDCT and NDCT solutions, internal equipment supply, mechanical engineering, fabrication, piping, welding and shutdown maintenance across India.">
+
 <link rel="canonical" href="https://www.apexepcs.com/about.html">
-  <!-- Social Sharing SEO -->
-<meta property="og:title" content="About APEX Engineering & Power Cooling Systems LLP | Cooling Tower & Industrial Engineering">
-<meta property="og:description" content="APEX Engineering & Power Cooling Systems LLP provides cooling tower services, mechanical engineering, fabrication, piping, industrial maintenance and engineering solutions across India.">
+
+<meta property="og:title" content="About APEX Engineering & Power Cooling Systems LLP | Industrial Engineering">
+<meta property="og:description" content="APEX Engineering & Power Cooling Systems LLP provides cooling tower services, internal equipment supply, mechanical engineering, fabrication, industrial piping, welding and shutdown maintenance solutions across India.">
 <meta property="og:url" content="https://www.apexepcs.com/about.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="APEX Engineering & Power Cooling Systems LLP">
-<meta property="og:image" content="https://www.apexepcs.com/apex-logo.png">
+<meta property="og:image" content="https://www.apexepcs.com/images/banner.jpg">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About APEX Engineering & Power Cooling Systems LLP | Cooling Tower & Industrial Engineering">
-<meta name="twitter:description" content="Cooling tower, mechanical engineering, fabrication, piping and industrial engineering solutions across India.">
-<meta name="twitter:image" content="https://www.apexepcs.com/apex-logo.png">
-  <link rel="stylesheet" href="style.css">
-<!-- About Page Structured Data -->
+<meta name="twitter:title" content="About APEX Engineering & Power Cooling Systems LLP">
+<meta name="twitter:description" content="Industrial engineering, cooling tower services, equipment supply, fabrication, piping and shutdown maintenance solutions across India.">
+<meta name="twitter:image" content="https://www.apexepcs.com/images/banner.jpg">
+
+<!-- ===== ABOUT PAGE STRUCTURED DATA ===== -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "name": "About APEX Engineering & Power Cooling Systems LLP",
-  "description": "APEX Engineering & Power Cooling Systems LLP provides cooling tower services, mechanical engineering, fabrication, piping, industrial maintenance and engineering solutions across India.",
+  "description": "About APEX Engineering & Power Cooling Systems LLP, an industrial engineering company providing cooling tower services, internal equipment supply, mechanical engineering, fabrication, piping, welding and shutdown maintenance solutions across India.",
   "url": "https://www.apexepcs.com/about.html",
   "isPartOf": {
     "@type": "WebSite",
@@ -38,73 +45,1487 @@ FILE: about.html
   "about": {
     "@type": "Organization",
     "name": "APEX Engineering & Power Cooling Systems LLP",
-    "url": "https://www.apexepcs.com/"
+    "url": "https://www.apexepcs.com/",
+    "telephone": "+91 9137766304",
+    "email": "info@apexepcs.com",
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    }
   }
 }
 </script>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #17324d;
+    background: #f7f9fb;
+}
+
+/* ===== HEADER ===== */
+
+.top-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e1e6eb;
+}
+
+.logo-section {
+    max-width: 1180px;
+    margin: auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-section img {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.company-text h1 {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.25;
+    color: #17324d;
+}
+
+.company-text p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #e87522;
+    font-style: italic;
+}
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    background: #002b5c;
+    position: relative;
+    z-index: 1000;
+}
+
+nav > ul {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li > a {
+    display: block;
+    padding: 14px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav li > a:hover {
+    background: #e87522;
+}
+
+/* ===== DROPDOWN ===== */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 280px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #002b5c;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.20);
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 18px;
+    color: #ffffff;
+    background: #002b5c;
+    font-size: 13px;
+}
+
+.dropdown-menu li a:hover {
+    background: #e87522;
+}
+
+/* ===== HERO ===== */
+
+.about-hero {
+    min-height: 470px;
+    background:
+        linear-gradient(rgba(0,38,75,0.70), rgba(0,38,75,0.72)),
+        url('images/banner.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about-hero-content {
+    max-width: 950px;
+    margin: auto;
+    padding: 70px 24px;
+}
+
+.about-hero h2 {
+    margin: 0 0 18px;
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.about-hero .hero-line {
+    width: 80px;
+    height: 4px;
+    background: #e87522;
+    margin: 0 auto 24px;
+}
+
+.about-hero p {
+    margin: 0 auto;
+    max-width: 850px;
+    font-size: 19px;
+}
+
+/* ===== GENERAL SECTIONS ===== */
+
+.section {
+    max-width: 1180px;
+    margin: auto;
+    padding: 70px 24px;
+}
+
+.section-light {
+    background: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0;
+    font-size: 34px;
+    color: #17324d;
+}
+
+.section-subtitle {
+    max-width: 800px;
+    margin: 12px auto 0;
+    text-align: center;
+    color: #555555;
+    font-size: 16px;
+}
+
+.section-divider {
+    width: 70px;
+    height: 4px;
+    background: #e87522;
+    margin: 15px auto 42px;
+}
+
+/* ===== WHO WE ARE ===== */
+
+.who-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.who-content h3 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #00529b;
+}
+
+.who-content p {
+    color: #333333;
+}
+
+.highlight-box {
+    background: #eef4f8;
+    border-left: 5px solid #e87522;
+    padding: 28px;
+    border-radius: 6px;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+    color: #17324d;
+}
+
+.highlight-box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #333333;
+}
+
+/* ===== CAPABILITY CARDS ===== */
+
+.capability-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.capability-card {
+    background: #ffffff;
+    border: 1px solid #e1e7ec;
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.capability-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #17324d;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.capability-card h3 {
+    margin: 0 0 10px;
+    color: #00529b;
+    font-size: 20px;
+}
+
+.capability-card p {
+    margin: 0 0 16px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.capability-card a {
+    color: #00529b;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.capability-card a:hover {
+    color: #e87522;
+}
+
+/* ===== BUSINESS MODEL ===== */
+
+.model-section {
+    background: #eef4f8;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.model-card {
+    background: #ffffff;
+    padding: 28px 22px;
+    border-top: 4px solid #e87522;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.model-card span {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #17324d;
+    margin-bottom: 10px;
+}
+
+.model-card h3 {
+    margin: 0 0 8px;
+    color: #00529b;
+    font-size: 18px;
+}
+
+.model-card p {
+    margin: 0;
+    color: #444444;
+    font-size: 14px;
+}
+
+/* ===== INDUSTRIES ===== */
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.industry-card {
+    background: #17324d;
+    color: #ffffff;
+    padding: 22px;
+    border-radius: 6px;
+    border-left: 4px solid #e87522;
+}
+
+.industry-card h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.industry-card p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #dce7ef;
+}
+
+/* ===== EXECUTION ===== */
+
+.execution-section {
+    background: #ffffff;
+}
+
+.execution-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.execution-step {
+    text-align: center;
+    padding: 25px 15px;
+    position: relative;
+}
+
+.execution-number {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #17324d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.execution-step h3 {
+    font-size: 16px;
+    color: #00529b;
+    margin: 0 0 8px;
+}
+
+.execution-step p {
+    margin: 0;
+    font-size: 13px;
+    color: #555555;
+}
+
+/* ===== INNOVATION ===== */
+
+.innovation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.innovation-box {
+    background: #17324d;
+    color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.innovation-box h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.innovation-box p {
+    color: #dce7ef;
+}
+
+.innovation-list {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #e0e6eb;
+    border-radius: 8px;
+}
+
+.innovation-list ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.innovation-list li {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+/* ===== QHSE ===== */
+
+.qhse-box {
+    background: #ffffff;
+    border: 1px solid #e1e7ec;
+    border-radius: 8px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.qhse-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.qhse-item {
+    padding: 20px;
+    background: #eef4f8;
+    border-top: 4px solid #e87522;
+}
+
+.qhse-item h3 {
+    margin: 0 0 6px;
+    color: #00529b;
+}
+
+.qhse-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #444444;
+}
+
+/* ===== COMPANY SNAPSHOT ===== */
+
+.snapshot-section {
+    background: #eef4f8;
+}
+
+.snapshot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.snapshot-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 6px;
+    border: 1px solid #e0e6eb;
+}
+
+.snapshot-card strong {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777777;
+    margin-bottom: 4px;
+}
+
+.snapshot-card span {
+    color: #17324d;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ===== CTA ===== */
+
+.cta-section {
+    background: #17324d;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 24px;
+}
+
+.cta-section h2 {
+    margin: 0 0 12px;
+    font-size: 32px;
+}
+
+.cta-section p {
+    max-width: 760px;
+    margin: 0 auto 25px;
+    color: #dce7ef;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #e87522;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #ffffff;
+    color: #17324d;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #10283d;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 7px 0 0;
+    font-size: 13px;
+    color: #dce7ef;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 900px) {
+
+    .capability-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .model-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .execution-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .snapshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .logo-section {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .logo-section img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .company-text h1 {
+        font-size: 14px;
+    }
+
+    .company-text p {
+        font-size: 10px;
+    }
+
+    nav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav > ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    nav li > a {
+        padding: 9px 10px;
+        font-size: 11px;
+    }
+
+    /* Mobile dropdown */
+
+    .dropdown > a {
+        position: relative;
+        padding-right: 27px;
+    }
+
+    .dropdown > a::after {
+        content: "▼";
+        position: absolute;
+        right: 7px;
+        font-size: 9px;
+    }
+
+    .dropdown.active > a::after {
+        content: "▲";
+    }
+
+    .dropdown > .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+        min-width: 100%;
+        box-shadow: none;
+    }
+
+    .dropdown.active > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown.active:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li a {
+        padding: 9px 18px;
+        font-size: 11px;
+        line-height: 1.3;
+    }
+
+    .about-hero {
+        min-height: 390px;
+    }
+
+    .about-hero-content {
+        padding: 55px 18px;
+    }
+
+    .about-hero h2 {
+        font-size: 32px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 50px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .who-grid,
+    .innovation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .capability-grid,
+    .industry-grid,
+    .qhse-items {
+        grid-template-columns: 1fr;
+    }
+
+    .model-grid,
+    .execution-grid,
+    .snapshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="top-header">
+<!-- ===== HEADER ===== -->
 
-<div class="logo-section">
+<header class="top-header">
 
-<img src="apex-logo.png">
+    <div class="logo-section">
 
-<div class="company-text">
-<h1>APEX Engineering & Power Cooling Systems LLP</h1>
-<p>Advanced Power Engineering eXperts</p>
-</div>
+        <img src="apex-logo.png"
+             alt="APEX Engineering & Power Cooling Systems LLP">
 
-</div>
+        <div class="company-text">
 
-</div>
+            <h1>APEX Engineering &amp; Power Cooling Systems LLP</h1>
+
+            <p>Advanced Power Engineering eXperts</p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ===== NAVIGATION ===== -->
 
 <nav>
 
 <ul>
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="supply.html">Supply</a></li>
-<li><a href="industries.html">Industries</a></li>
-<li><a href="contact.html">Contact</a></li>
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+
+    <li class="dropdown">
+
+        <a href="about.html">About</a>
+
+        <ul class="dropdown-menu">
+
+            <li><a href="about.html">Company</a></li>
+            <li><a href="innovation.html">Innovation</a></li>
+            <li><a href="vision-mission.html">Vision &amp; Mission</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="qhse.html">QHSE</a></li>
+
+        </ul>
+
+    </li>
+
+    <li class="dropdown">
+
+        <a href="services.html">Services</a>
+
+        <ul class="dropdown-menu">
+
+            <li><a href="cooling-tower-services/">Cooling Tower Services</a></li>
+            <li><a href="idct-ndct-cooling-tower-services/">IDCT / NDCT Cooling Tower Services</a></li>
+            <li><a href="mechanical-engineering-services/">Mechanical &amp; Engineering Services</a></li>
+            <li><a href="industrial-fabrication-structural-works/">Industrial Fabrication &amp; Structural Works</a></li>
+            <li><a href="industrial-piping-welding/">Industrial Piping &amp; Welding</a></li>
+            <li><a href="shutdown-maintenance/">Shutdown &amp; Maintenance</a></li>
+
+        </ul>
+
+    </li>
+
+    <li class="dropdown">
+
+        <a href="supply.html">Supply</a>
+
+        <ul class="dropdown-menu">
+
+            <li><a href="cooling-tower-internals/">Cooling Tower Internals</a></li>
+            <li><a href="mechanical-equipment-components/">Mechanical Equipment &amp; Components</a></li>
+            <li><a href="piping-valves-fittings/">Piping, Valves &amp; Fittings</a></li>
+            <li><a href="fabricated-items-structural-components/">Fabricated Items &amp; Structural Components</a></li>
+            <li><a href="industrial-tools-construction-equipment/">Industrial Tools &amp; Construction Equipment</a></li>
+            <li><a href="ppe-site-safety-items/">PPE &amp; Site Safety Items</a></li>
+
+        </ul>
+
+    </li>
+
+    <li>
+        <a href="industries.html">Industries</a>
+    </li>
+
+    <li>
+        <a href="resources/">Resources</a>
+    </li>
+
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
 
 </ul>
 
 </nav>
 
-<section class="section">
+<!-- ===== HERO ===== -->
 
-<h2 class="section-title">
-About Us
-</h2>
+<section class="about-hero">
 
-<div class="about-layout">
+    <div class="about-hero-content">
 
-<img src="images/about.jpg">
+        <h2>About APEX Engineering &amp; Power Cooling Systems LLP</h2>
 
-<div class="about-text">
+        <div class="hero-line"></div>
 
-APEX Engineering & Power Cooling Systems LLP is a trusted provider of cooling tower services, engineering solutions, industrial supply, and mechanical project support for power plants and industrial facilities across India.
+        <p>
+            An industrial engineering partner for cooling tower performance,
+            plant reliability, mechanical execution and industrial supply.
+        </p>
 
-We specialize in cooling tower inspection, NDCT & IDCT internals replacement, shutdown maintenance, mechanical erection, industrial supply, and Annual Maintenance Contracts (AMC).
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
+<!-- ===== WHO WE ARE ===== -->
+
+<section class="section">
+
+    <div class="who-grid">
+
+        <div class="who-content">
+
+            <h3>Who We Are</h3>
+
+            <p>
+                <strong>APEX Engineering &amp; Power Cooling Systems LLP</strong>
+                is an industrial engineering company providing Cooling Tower
+                Services &amp; Internal Equipment Supply, together with
+                Mechanical, Fabrication &amp; Engineering Services.
+            </p>
+
+            <p>
+                We support power, steel, cement, chemical, fertilizer,
+                process and other industrial plants with inspection,
+                maintenance, rehabilitation, shutdown and engineering
+                requirements.
+            </p>
+
+            <p>
+                Our capability combines field execution with equipment
+                supply, fabrication, erection and site engineering support,
+                enabling coordinated execution for industrial maintenance
+                and project requirements.
+            </p>
+
+        </div>
+
+        <div class="highlight-box">
+
+            <h3>Our Core Focus</h3>
+
+            <ul>
+                <li>Cooling tower inspection &amp; maintenance</li>
+                <li>IDCT / NDCT refurbishment</li>
+                <li>Cooling tower internal equipment</li>
+                <li>Mechanical &amp; site engineering</li>
+                <li>Fabrication &amp; structural works</li>
+                <li>Industrial piping &amp; welding</li>
+                <li>Shutdown &amp; maintenance support</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== CORE CAPABILITIES ===== -->
+
+<section class="section section-light">
+
+    <h2 class="section-title">Our Core Capabilities</h2>
+
+    <p class="section-subtitle">
+        Integrated engineering and field-service capabilities for cooling
+        systems, plant maintenance and industrial execution.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <div class="capability-grid">
+
+        <article class="capability-card">
+
+            <div class="capability-icon">01</div>
+
+            <h3>Cooling Tower Services</h3>
+
+            <p>
+                Inspection, maintenance, rehabilitation, internal equipment
+                replacement, basin cleaning and performance improvement.
+            </p>
+
+            <a href="cooling-tower-services/">Explore Service →</a>
+
+        </article>
+
+        <article class="capability-card">
+
+            <div class="capability-icon">02</div>
+
+            <h3>IDCT / NDCT Services</h3>
+
+            <p>
+                Maintenance, refurbishment and internal equipment solutions
+                for induced draft and natural draft cooling towers.
+            </p>
+
+            <a href="idct-ndct-cooling-tower-services/">Explore Service →</a>
+
+        </article>
+
+        <article class="capability-card">
+
+            <div class="capability-icon">03</div>
+
+            <h3>Mechanical &amp; Engineering</h3>
+
+            <p>
+                Mechanical installation, erection, equipment replacement,
+                modification and site engineering support.
+            </p>
+
+            <a href="mechanical-engineering-services/">Explore Service →</a>
+
+        </article>
+
+        <article class="capability-card">
+
+            <div class="capability-icon">04</div>
+
+            <h3>Fabrication &amp; Structural Works</h3>
+
+            <p>
+                Structural and equipment fabrication, dismantling, erection,
+                supports and industrial steelwork.
+            </p>
+
+            <a href="industrial-fabrication-structural-works/">Explore Service →</a>
+
+        </article>
+
+        <article class="capability-card">
+
+            <div class="capability-icon">05</div>
+
+            <h3>Industrial Piping &amp; Welding</h3>
+
+            <p>
+                Industrial piping fabrication and erection, welding,
+                supports, modifications and related mechanical works.
+            </p>
+
+            <a href="industrial-piping-welding/">Explore Service →</a>
+
+        </article>
+
+        <article class="capability-card">
+
+            <div class="capability-icon">06</div>
+
+            <h3>Shutdown &amp; Maintenance</h3>
+
+            <p>
+                Planned shutdown support, annual maintenance, repair,
+                replacement, refurbishment and mechanical maintenance.
+            </p>
+
+            <a href="shutdown-maintenance/">Explore Service →</a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ===== ENGINEERING + SUPPLY MODEL ===== -->
+
+<section class="section model-section">
+
+    <h2 class="section-title">Flexible Engagement Model</h2>
+
+    <p class="section-subtitle">
+        APEX Engineering &amp; Power Cooling Systems LLP can support
+        clients and principal contractors through different execution models.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <div class="model-grid">
+
+        <article class="model-card">
+
+            <span>01</span>
+
+            <h3>Direct Vendor</h3>
+
+            <p>
+                Supply and execute directly against purchase orders
+                or work orders.
+            </p>
+
+        </article>
+
+        <article class="model-card">
+
+            <span>02</span>
+
+            <h3>Service Contractor</h3>
+
+            <p>
+                Field execution of inspection, maintenance,
+                cooling tower and shutdown scopes.
+            </p>
+
+        </article>
+
+        <article class="model-card">
+
+            <span>03</span>
+
+            <h3>Subcontractor</h3>
+
+            <p>
+                Mechanical, fabrication, piping and cooling tower
+                scopes under a main contractor.
+            </p>
+
+        </article>
+
+        <article class="model-card">
+
+            <span>04</span>
+
+            <h3>Project Execution Partner</h3>
+
+            <p>
+                Coordinated supply, fabrication, erection, testing
+                and commissioning support.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ===== INDUSTRIES ===== -->
+
+<section class="section">
+
+    <h2 class="section-title">Industries We Serve</h2>
+
+    <p class="section-subtitle">
+        Supporting cooling, mechanical and industrial engineering
+        requirements across diverse plant environments.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <div class="industry-grid">
+
+        <div class="industry-card">
+            <h3>Power Plants</h3>
+            <p>Thermal, nuclear and gas-based power facilities.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Steel &amp; Metal</h3>
+            <p>Steel and metal production facilities.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Cement</h3>
+            <p>Cement manufacturing and associated plants.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Oil &amp; Gas</h3>
+            <p>Refineries and related industrial facilities.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Chemical &amp; Petrochemical</h3>
+            <p>Process and chemical production facilities.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Fertilizer</h3>
+            <p>Fertilizer and process industry plants.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Process &amp; Manufacturing</h3>
+            <p>Industrial manufacturing and engineering facilities.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>HVAC &amp; District Cooling</h3>
+            <p>Large-scale cooling and HVAC systems.</p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Commercial &amp; Data Centres</h3>
+            <p>Critical cooling and mechanical infrastructure.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== HOW WE EXECUTE ===== -->
+
+<section class="section execution-section">
+
+    <h2 class="section-title">How We Execute</h2>
+
+    <p class="section-subtitle">
+        A practical engineering approach focused on safe execution,
+        technical clarity and reliable site delivery.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <div class="execution-grid">
+
+        <div class="execution-step">
+
+            <div class="execution-number">01</div>
+
+            <h3>Understand</h3>
+
+            <p>
+                Understand the client's requirement, plant conditions
+                and execution scope.
+            </p>
+
+        </div>
+
+        <div class="execution-step">
+
+            <div class="execution-number">02</div>
+
+            <h3>Inspect</h3>
+
+            <p>
+                Assess existing equipment, site conditions and
+                maintenance requirements.
+            </p>
+
+        </div>
+
+        <div class="execution-step">
+
+            <div class="execution-number">03</div>
+
+            <h3>Engineer</h3>
+
+            <p>
+                Develop the practical technical approach, materials
+                and execution methodology.
+            </p>
+
+        </div>
+
+        <div class="execution-step">
+
+            <div class="execution-number">04</div>
+
+            <h3>Execute</h3>
+
+            <p>
+                Carry out supply, fabrication, installation,
+                maintenance and site works.
+            </p>
+
+        </div>
+
+        <div class="execution-step">
+
+            <div class="execution-number">05</div>
+
+            <h3>Support</h3>
+
+            <p>
+                Provide testing, commissioning support and
+                post-execution coordination.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== INNOVATION ===== -->
+
+<section class="section">
+
+    <h2 class="section-title">Engineering &amp; Innovation</h2>
+
+    <p class="section-subtitle">
+        Engineering solutions focused on cooling performance,
+        reliability, efficiency and client-specific requirements.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <div class="innovation-grid">
+
+        <div class="innovation-box">
+
+            <h3>Performance-Focused Engineering</h3>
+
+            <p>
+                APEX Engineering &amp; Power Cooling Systems LLP
+                supports cooling tower and industrial engineering
+                requirements with practical, application-focused
+                solutions.
+            </p>
+
+            <p>
+                Our technical focus includes cooling tower performance,
+                internal equipment selection, water distribution,
+                maintenance requirements and site execution.
+            </p>
+
+        </div>
+
+        <div class="innovation-list">
+
+            <ul>
+
+                <li>Film and splash type fill design</li>
+
+                <li>Drift eliminator optimization</li>
+
+                <li>Spray nozzle and water distribution design</li>
+
+                <li>Cooling tower performance enhancement</li>
+
+                <li>Energy and water efficiency solutions</li>
+
+                <li>Custom engineering for client-specific requirements</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== QHSE ===== -->
+
+<section class="section section-light">
+
+    <h2 class="section-title">Quality, Health, Safety &amp; Environment</h2>
+
+    <p class="section-subtitle">
+        Responsible engineering execution is central to the way
+        APEX approaches industrial work.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <div class="qhse-box">
+
+        <p>
+            APEX Engineering &amp; Power Cooling Systems LLP is committed
+            to maintaining strong standards of quality, health, safety
+            and environmental protection across its operations.
+        </p>
+
+        <div class="qhse-items">
+
+            <div class="qhse-item">
+
+                <h3>Quality</h3>
+
+                <p>
+                    Focus on reliable workmanship, suitable materials
+                    and technically appropriate solutions.
+                </p>
+
+            </div>
+
+            <div class="qhse-item">
+
+                <h3>Health &amp; Safety</h3>
+
+                <p>
+                    Safe work practices and responsible site execution
+                    for industrial environments.
+                </p>
+
+            </div>
+
+            <div class="qhse-item">
+
+                <h3>Environment</h3>
+
+                <p>
+                    Consideration of environmental protection and
+                    resource efficiency in engineering solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== COMPANY SNAPSHOT ===== -->
+
+<section class="section snapshot-section">
+
+    <h2 class="section-title">Company Snapshot</h2>
+
+    <div class="section-divider"></div>
+
+    <div class="snapshot-grid">
+
+        <div class="snapshot-card">
+            <strong>Legal Entity</strong>
+            <span>APEX Engineering &amp; Power Cooling Systems LLP</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>Entity Type</strong>
+            <span>Limited Liability Partnership</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>LLPIN</strong>
+            <span>ACW-8292</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>GSTIN</strong>
+            <span>09ACNFA8969R1Z0</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>Registered Office</strong>
+            <span>Ghaziabad, Uttar Pradesh</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>Service Model</strong>
+            <span>Field Services + Supply</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>Coverage</strong>
+            <span>Pan-India</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>Primary Focus</strong>
+            <span>Industrial Engineering &amp; Cooling</span>
+        </div>
+
+        <div class="snapshot-card">
+            <strong>Engagement</strong>
+            <span>Vendor / Contractor / Subcontractor / Partner</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== CTA ===== -->
+
+<section class="cta-section">
+
+    <h2>Looking for an Industrial Engineering Partner?</h2>
+
+    <p>
+        Discuss your cooling tower, mechanical, fabrication, piping,
+        shutdown maintenance or industrial supply requirement with
+        APEX Engineering &amp; Power Cooling Systems LLP.
+    </p>
+
+    <a class="cta-button" href="contact.html">
+        Contact APEX Engineering &amp; Power Cooling Systems LLP
+    </a>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
 <footer>
 
-<h2>APEX EPCS LLP</h2>
+    <h2>APEX Engineering &amp; Power Cooling Systems LLP</h2>
 
-<p>Email: info@apexepcs.com</p>
+    <p>
+        Advanced Power Engineering eXperts
+    </p>
+
+    <p>
+        Cooling Tower Services &nbsp;|&nbsp;
+        Mechanical Engineering &nbsp;|&nbsp;
+        Fabrication &nbsp;|&nbsp;
+        Industrial Piping &nbsp;|&nbsp;
+        Shutdown Maintenance
+    </p>
+
+    <p>
+        Shankar Vihar Khora, I.E. Sahibabad, Ghaziabad – 201010, Uttar Pradesh
+        &nbsp; | &nbsp; +91 9137766304
+        &nbsp; | &nbsp; info@apexepcs.com
+    </p>
 
 </footer>
 
+<!-- ===== MOBILE DROPDOWN SCRIPT ===== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const dropdowns = document.querySelectorAll("nav .dropdown");
+
+    dropdowns.forEach(function (dropdown) {
+
+        const link = dropdown.querySelector(":scope > a");
+
+        link.addEventListener("click", function (event) {
+
+            if (window.innerWidth <= 768) {
+
+                event.preventDefault();
+
+                dropdowns.forEach(function (other) {
+
+                    if (other !== dropdown) {
+                        other.classList.remove("active");
+                    }
+
+                });
+
+                dropdown.classList.toggle("active");
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
 </body>
+
 </html>
