@@ -65,8 +65,8 @@
 
         /* ===== HEADER ===== */
         .top-header {
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            color: #fff;
+            background: #ffffff;
+           color: #073968;
             padding: 15px 20px;
         }
 
@@ -78,26 +78,32 @@
             gap: 20px;
         }
 
-        .logo img {
-            width: 140px;
-            height: auto;
-        }
+       .logo img {
+    width: 115px;
+    height: 115px;
+    object-fit: contain;
+    display: block;
+}
+       .company-details h1 {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #073968;
+}
 
-        .company-details h1 {
-            margin: 0;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .tagline {
-            font-size: 16px;
-            font-style: italic;
-            margin-top: 5px;
-        }
+       .tagline {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 4px;
+    color: #f58a1f;
+}
 
         /* ===== NAVIGATION ===== */
         nav {
-            background: var(--navy);
+            background: #073968;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -122,7 +128,7 @@
         }
 
         .nav-menu li a:hover {
-            background: var(--secondary);
+            background: #f58a1f;
         }/* ===== NAVIGATION DROPDOWN ===== */
 
 .nav-menu li.dropdown {
@@ -759,10 +765,11 @@ font-weight:bold;
     }
 
     .logo img {
-        width: 65px;
-        height: auto;
-    }
-
+    width: 82px;
+    height: 82px;
+    object-fit: contain;
+    display: block;
+}
     .company-details {
         flex: 1;
         min-width: 0;
