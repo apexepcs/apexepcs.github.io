@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Engineering Innovation & Cooling Tower Performance | APEX Engineering & Power Cooling Systems LLP</title>
+
+<meta name="description" content="APEX Engineering & Power Cooling Systems LLP focuses on cooling tower performance improvement, internal equipment optimization, water distribution, fill systems, drift eliminators and client-specific engineering solutions.">
+
+<link rel="canonical" href="https://www.apexepcs.com/innovation.html">
+
+<meta property="og:title" content="Engineering Innovation | APEX Engineering & Power Cooling Systems LLP">
+<meta property="og:description" content="Engineering innovation for cooling tower performance, efficiency and client-specific industrial requirements.">
+<meta property="og:url" content="https://www.apexepcs.com/innovation.html">
+<meta property="og:type" content="website">
+
+<style>
+
+:root{
+    --navy:#00386b;
+    --blue:#005a9c;
+    --orange:#f58a1f;
+    --light:#f4f7fa;
+    --text:#18324a;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text);
+    background:#ffffff;
+    line-height:1.65;
+}
+
+.top-header{
+    background:#ffffff;
+    padding:18px 20px;
+}
+
+.header-container{
+    max-width:1180px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo img{
+    width:65px;
+    height:auto;
+    display:block;
+}
+
+.company-details h1{
+    margin:0;
+    color:#073968;
+    font-size:24px;
+}
+
+.tagline{
+    color:var(--orange);
+    font-style:italic;
+    margin-top:3px;
+}
+
+nav{
+    background:var(--navy);
+}
+
+nav > ul{
+    max-width:1180px;
+    margin:auto;
+    padding:0;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav > ul > li{
+    position:relative;
+}
+
+nav a{
+    display:block;
+    padding:15px 18px;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+nav a:hover{
+    background:var(--orange);
+}
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:280px;
+    padding:0;
+    margin:0;
+    list-style:none;
+    background:var(--navy);
+    z-index:2000;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover > .dropdown-menu{
+    display:block;
+}
+
+.dropdown-menu li a{
+    padding:13px 18px;
+    font-size:15px;
+}
+
+.dropdown-menu li a:hover{
+    background:var(--orange);
+}
+
+/* HERO */
+
+.innovation-hero{
+    min-height:450px;
+    background:
+        linear-gradient(rgba(0,38,75,0.70),rgba(0,38,75,0.72)),
+        url('images/about-hero.png') center / cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#ffffff;
+}
+
+.innovation-hero-content{
+    max-width:950px;
+    padding:60px 25px;
+}
+
+.innovation-hero h2{
+    margin:0;
+    font-size:48px;
+    line-height:1.15;
+}
+
+.hero-line{
+    width:85px;
+    height:4px;
+    background:var(--orange);
+    margin:25px auto;
+}
+
+.innovation-hero p{
+    font-size:19px;
+    max-width:850px;
+    margin:auto;
+}
+
+/* GENERAL */
+
+section{
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1180px;
+    margin:auto;
+}
+
+.section-title{
+    color:#075a9c;
+    font-size:36px;
+    margin:0 0 10px;
+}
+
+.section-divider{
+    width:100%;
+    height:3px;
+    background:var(--orange);
+    margin-bottom:35px;
+}
+
+/* INTRO */
+
+.innovation-intro{
+    background:#ffffff;
+}
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    gap:45px;
+    align-items:center;
+}
+
+.intro-text p{
+    font-size:17px;
+}
+
+.intro-image img{
+    width:100%;
+    border-radius:10px;
+    display:block;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* CARDS */
+
+.innovation-focus{
+    background:var(--light);
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#ffffff;
+    border-radius:10px;
+    padding:28px;
+    border-top:5px solid var(--orange);
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    margin-top:0;
+    color:#075a9c;
+    font-size:21px;
+}
+
+.card p{
+    margin-bottom:0;
+}
+
+/* PERFORMANCE */
+
+.performance-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.performance-box{
+    background:#eef5fa;
+    border-left:5px solid var(--orange);
+    padding:25px;
+    border-radius:5px;
+}
+
+.performance-box h3{
+    margin-top:0;
+    color:#073968;
+}
+
+.performance-box ul{
+    margin:0;
+    padding-left:22px;
+}
+
+/* ENGINEERING APPROACH */
+
+.approach{
+    background:#ffffff;
+}
+
+.approach-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.step{
+    text-align:center;
+    background:#f4f7fa;
+    padding:25px 15px;
+    border-radius:8px;
+}
+
+.step-number{
+    width:45px;
+    height:45px;
+    line-height:45px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:var(--orange);
+    color:#ffffff;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.step h3{
+    color:#075a9c;
+    font-size:18px;
+    margin:0 0 8px;
+}
+
+/* CTA */
+
+.cta{
+    background:var(--navy);
+    color:#ffffff;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:32px;
+    margin-top:0;
+}
+
+.cta p{
+    max-width:800px;
+    margin:0 auto 25px;
+}
+
+.cta-button{
+    display:inline-block;
+    background:var(--orange);
+    color:#ffffff;
+    text-decoration:none;
+    padding:13px 28px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.cta-button:hover{
+    background:#ffffff;
+    color:var(--navy);
+}
+
+/* FOOTER */
+
+footer{
+    background:#062d52;
+    color:#ffffff;
+    text-align:center;
+    padding:28px 20px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .card-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .approach-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .intro-grid{
+        grid-template-columns:1fr;
+    }
+
+    .performance-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .top-header{
+        padding:8px 10px;
+    }
+
+    .header-container{
+        gap:10px;
+    }
+
+    .logo img{
+        width:58px;
+    }
+
+    .company-details h1{
+        font-size:14px;
+        line-height:1.25;
+    }
+
+    .tagline{
+        font-size:10px;
+    }
+
+    nav{
+        overflow-x:auto;
+    }
+
+    nav > ul{
+        justify-content:flex-start;
+        flex-wrap:wrap;
+    }
+
+    nav a{
+        font-size:11px;
+        padding:9px 10px;
+    }
+
+    .dropdown > a{
+        position:relative;
+        padding-right:28px;
+    }
+
+    .dropdown > a::after{
+        content:"▼";
+        position:absolute;
+        right:8px;
+        font-size:9px;
+    }
+
+    .dropdown.active > a::after{
+        content:"▲";
+    }
+
+    .dropdown > .dropdown-menu{
+        display:none;
+        position:static;
+        width:100%;
+        min-width:100%;
+        box-shadow:none;
+    }
+
+    .dropdown.active > .dropdown-menu{
+        display:block;
+    }
+
+    .dropdown:hover > .dropdown-menu{
+        display:none;
+    }
+
+    .dropdown.active:hover > .dropdown-menu{
+        display:block;
+    }
+
+    .innovation-hero{
+        min-height:360px;
+    }
+
+    .innovation-hero h2{
+        font-size:31px;
+    }
+
+    .innovation-hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:50px 15px;
+    }
+
+    .section-title{
+        font-size:29px;
+    }
+
+    .card-grid,
+    .approach-grid{
+        grid-template-columns:1fr;
+    }
+
+    .innovation-hero-content{
+        padding:45px 18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="apex-logo.png" alt="APEX Engineering & Power Cooling Systems LLP Logo">
+        </div>
+
+        <div class="company-details">
+            <h1>APEX Engineering &amp; Power Cooling Systems LLP</h1>
+            <div class="tagline">Advanced Power Engineering eXperts</div>
+        </div>
+
+    </div>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li class="dropdown">
+
+<a href="about.html">About</a>
+
+<ul class="dropdown-menu">
+
+<li><a href="about.html">Company</a></li>
+<li><a href="innovation.html">Innovation</a></li>
+<li><a href="vision-mission.html">Vision &amp; Mission</a></li>
+<li><a href="why-choose-us.html">Why Choose Us</a></li>
+<li><a href="qhse.html">QHSE</a></li>
+
+</ul>
+
+</li>
+
+<li class="dropdown">
+
+<a href="services.html">Services</a>
+
+<ul class="dropdown-menu">
+
+<li><a href="cooling-tower-services/">Cooling Tower Services</a></li>
+<li><a href="idct-ndct-cooling-tower-services/">IDCT / NDCT Cooling Tower Services</a></li>
+<li><a href="mechanical-engineering-services/">Mechanical &amp; Engineering Services</a></li>
+<li><a href="industrial-fabrication-structural-works/">Industrial Fabrication &amp; Structural Works</a></li>
+<li><a href="industrial-piping-welding/">Industrial Piping &amp; Welding</a></li>
+<li><a href="shutdown-maintenance/">Shutdown &amp; Maintenance</a></li>
+
+</ul>
+
+</li>
+
+<li class="dropdown">
+
+<a href="supply.html">Supply</a>
+
+<ul class="dropdown-menu">
+
+<li><a href="cooling-tower-internals/">Cooling Tower Internals</a></li>
+<li><a href="mechanical-equipment-components/">Mechanical Equipment &amp; Components</a></li>
+<li><a href="piping-valves-fittings/">Piping, Valves &amp; Fittings</a></li>
+<li><a href="fabricated-items-structural-components/">Fabricated Items &amp; Structural Components</a></li>
+<li><a href="industrial-tools-construction-equipment/">Industrial Tools &amp; Construction Equipment</a></li>
+<li><a href="ppe-site-safety-items/">PPE &amp; Site Safety Items</a></li>
+
+</ul>
+
+</li>
+
+<li>
+<a href="industries.html">Industries</a>
+</li>
+
+<li>
+<a href="resources/">Resources</a>
+</li>
+
+<li>
+<a href="index.html#contact">Contact</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="innovation-hero">
+
+<div class="innovation-hero-content">
+
+<h2>Engineering Innovation &amp; Cooling Tower Performance</h2>
+
+<div class="hero-line"></div>
+
+<p>
+Engineering-focused solutions for cooling tower efficiency,
+reliability, performance improvement and client-specific industrial requirements.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="innovation-intro">
+
+<div class="container">
+
+<h2 class="section-title">Engineering &amp; Innovation</h2>
+
+<div class="section-divider"></div>
+
+<div class="intro-grid">
+
+<div class="intro-text">
+
+<p>
+APEX Engineering &amp; Power Cooling Systems LLP approaches innovation
+through practical engineering, field experience and application-focused
+solutions for industrial cooling systems.
+</p>
+
+<p>
+Our engineering activities include cooling tower component development,
+performance improvement, water distribution considerations, fill systems,
+drift eliminator optimization and client-specific engineering requirements.
+</p>
+
+<p>
+The objective is to improve cooling tower operation while maintaining
+practicality, reliability, maintainability and suitability for site conditions.
+</p>
+
+</div>
+
+<div class="intro-image">
+
+<img src="images/fills.jpg"
+     alt="Cooling tower fill equipment">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INNOVATION FOCUS -->
+
+<section class="innovation-focus">
+
+<div class="container">
+
+<h2 class="section-title">Our Innovation Focus</h2>
+
+<div class="section-divider"></div>
+
+<div class="card-grid">
+
+<div class="card">
+
+<h3>Cooling Tower Fill Systems</h3>
+
+<p>
+Engineering and application of film and splash type fill systems
+for cooling tower performance requirements.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Drift Eliminator Optimization</h3>
+
+<p>
+Focus on drift eliminator selection and optimization as part of
+cooling tower internal equipment solutions.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Water Distribution</h3>
+
+<p>
+Engineering consideration of spray nozzles and water distribution
+systems to support effective cooling tower operation.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Performance Enhancement</h3>
+
+<p>
+Assessment and engineering solutions aimed at improving cooling
+tower performance and operational reliability.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Energy &amp; Water Efficiency</h3>
+
+<p>
+Engineering solutions focused on practical opportunities for
+improved energy and water efficiency.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Client-Specific Engineering</h3>
+
+<p>
+Engineering support tailored to specific plant conditions,
+equipment requirements and project objectives.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PERFORMANCE -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Performance-Oriented Engineering</h2>
+
+<div class="section-divider"></div>
+
+<div class="performance-grid">
+
+<div class="performance-box">
+
+<h3>Cooling Tower Performance</h3>
+
+<ul>
+<li>Cooling tower inspection and assessment</li>
+<li>Internal equipment evaluation</li>
+<li>Performance improvement requirements</li>
+<li>Fill and drift eliminator considerations</li>
+<li>Water distribution system considerations</li>
+</ul>
+
+</div>
+
+<div class="performance-box">
+
+<h3>Engineering Execution</h3>
+
+<ul>
+<li>Site-specific engineering</li>
+<li>Component replacement and modification</li>
+<li>Mechanical and fabrication support</li>
+<li>Industrial piping and welding support</li>
+<li>Shutdown and maintenance execution</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- APPROACH -->
+
+<section class="approach">
+
+<div class="container">
+
+<h2 class="section-title">Our Engineering Approach</h2>
+
+<div class="section-divider"></div>
+
+<div class="approach-grid">
+
+<div class="step">
+
+<div class="step-number">1</div>
+
+<h3>Understand</h3>
+
+<p>Understand the client requirement and operating objective.</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">2</div>
+
+<h3>Inspect</h3>
+
+<p>Review equipment, site conditions and existing arrangements.</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">3</div>
+
+<h3>Engineer</h3>
+
+<p>Develop a practical engineering approach for the requirement.</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">4</div>
+
+<h3>Execute</h3>
+
+<p>Support fabrication, supply, installation and field execution.</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">5</div>
+
+<h3>Improve</h3>
+
+<p>Focus on reliability, maintainability and performance improvement.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Discuss Your Engineering Requirement</h2>
+
+<p>
+Whether the requirement involves cooling tower performance,
+internal equipment, fabrication, piping or industrial engineering,
+APEX Engineering &amp; Power Cooling Systems LLP can support the
+requirement with a practical field-oriented approach.
+</p>
+
+<a class="cta-button" href="index.html#contact">
+Contact APEX Engineering &amp; Power Cooling Systems LLP
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p><strong>APEX Engineering &amp; Power Cooling Systems LLP</strong></p>
+
+<p>Shankar Vihar Khora, I.E. Sahibabad, Ghaziabad – 201010, Uttar Pradesh</p>
+
+<p>+91 9137766304 &nbsp; | &nbsp; info@apexepcs.com</p>
+
+<p>Advanced Power Engineering eXperts</p>
+
+</footer>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const dropdowns =
+        document.querySelectorAll("nav .dropdown");
+
+    dropdowns.forEach(function(dropdown){
+
+        const link =
+            dropdown.querySelector(":scope > a");
+
+        link.addEventListener("click", function(event){
+
+            if(window.innerWidth <= 768){
+
+                event.preventDefault();
+
+                dropdowns.forEach(function(other){
+
+                    if(other !== dropdown){
+                        other.classList.remove("active");
+                    }
+
+                });
+
+                dropdown.classList.toggle("active");
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
