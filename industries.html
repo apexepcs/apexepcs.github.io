@@ -22,6 +22,162 @@ FILE: industries.html
 <meta name="twitter:description" content="Industrial cooling tower and engineering solutions for power, steel, cement and process industries across India.">
 <meta name="twitter:image" content="https://www.apexepcs.com/apex-logo.png">
   <link rel="stylesheet" href="style.css">
+  <style>
+/* ===== INDUSTRIES PAGE HEADER ===== */
+
+.top-header{
+    background:linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #f4f9ff 28%,
+        #dbeeff 52%,
+        #4f8fc9 72%,
+        #f58a1f 100%
+    );
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+}
+
+.logo-section img{
+    width:115px;
+    height:115px;
+    object-fit:contain;
+    margin-right:20px;
+}
+
+.company-text h1{
+    margin:0;
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:24px;
+    line-height:1.25;
+    font-weight:700;
+    color:#073968;
+}
+
+.company-text p{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+    color:#f58a1f;
+}
+
+nav{
+    background:#073968;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    display:block;
+    padding:14px 18px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:#f58a1f;
+}
+
+/* Dropdown */
+nav ul li.dropdown{
+    position:relative;
+}
+
+nav ul li.dropdown .dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#073968;
+    min-width:260px;
+    padding:0;
+    margin:0;
+    list-style:none;
+    z-index:1000;
+}
+
+nav ul li.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+nav ul li.dropdown .dropdown-menu li{
+    width:100%;
+}
+
+nav ul li.dropdown .dropdown-menu li a{
+    padding:11px 16px;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+nav ul li.dropdown .dropdown-menu li a:hover{
+    background:#f58a1f;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .top-header{
+        padding:8px 10px;
+    }
+
+    .logo-section{
+        align-items:center;
+    }
+
+    .logo-section img{
+        width:82px;
+        height:82px;
+        margin-right:10px;
+    }
+
+    .company-text h1{
+        font-size:14px;
+        line-height:1.25;
+    }
+
+    .company-text p{
+        font-size:10px;
+        margin-top:3px;
+    }
+
+    nav{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    nav ul{
+        justify-content:flex-start;
+        flex-wrap:wrap;
+    }
+
+    nav ul li a{
+        font-size:11px;
+        padding:9px 10px;
+        white-space:nowrap;
+    }
+}
+</style>
   <!-- Industries Page Structured Data -->
 <script type="application/ld+json">
 {
